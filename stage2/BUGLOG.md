@@ -1,0 +1,172 @@
+# CROWD-1 Stage 2 — bug / error log
+
+A6: *"Implementation bugs, algebraic errors in a prediction, and model failures are
+logged as distinct categories, corrected in versioned reruns with the original
+results retained."*
+
+| code | category |
+|---|---|
+| **S** | simulator bug — the engine does not implement specification v0.6 |
+| **H** | harness bug — the driver, a declared criterion or the reporting is wrong |
+| **A** | algebraic error, or an error of scope, in a registered prediction |
+| **M** | model failure — engine correct, prediction correct, and they disagree |
+
+Found in Stage 2: one **H** (B3), one **A** (A1), and one discrepancy whose
+category cannot be assigned from the files in this project (D1). No **S**.
+
+---
+
+## B3 — category H (harness) — archive s2-v1 → s2-v2
+
+**Rows affected.** Six: `P4 finite-amplitude threshold f_c` at λ = 1.60, 1.75 and
+1.90; `P2-delay rho=0: order dependence persists`; `P2-delay rho=0.5: order
+dependence decays`; `P1-delay orientation preparation decays`.
+
+**Defect.** Each was emitted as a POINT comparison with `ci_lo = ci_hi = diff`,
+i.e. with **no confidence interval**. A6 requires that *"the simulation-minus-
+prediction difference is estimated with its confidence interval"* and that the
+verdict be PASS / FAIL / **INCONCLUSIVE** according to where that interval lies.
+A zero-width interval makes INCONCLUSIVE unreachable by construction, so **three**
+of these six rows were recorded as FAIL on differences that no interval had been
+computed for — `P4 f_c at lambda = 1.75`, `P4 f_c at lambda = 1.90`, and
+`P2-delay rho=0: order dependence persists`. Two further A6 obligations were
+missed on the same rows: `replicates_needed`
+can never be produced without an interval, and **P4 had no N ladder at all**, so
+A6 error source 2 (finite-N bias relative to the mean-field prediction) was absent
+from exactly the rows where the measured ignition curves show it dominates — at
+λ = 1.90 the declared N = 5·10⁴ puts only ≈430 agents in the cohort, and the
+measured ignition probability runs from 0.13 at f = 0.005 to 1.00 at f = 0.014.
+
+**Evidence that this is H and not A, M or S.** The defect is confined to
+`stage2_items.py`, the file that assembles verdict rows: no file under `crowd1/`
+was touched by the correction, and the measured quantities in s2-v2 are produced
+by the same engine and the same seeds as in s2-v1. The quantity at issue is the
+*interval* this harness failed to compute, not the measurement and not the
+prediction. The independent check that the Stage 2 engine extensions leave the
+Stage 1 behaviour unchanged is `regression_stage1.py`: it re-runs the whole Stage 1
+suite against the Stage 2 engine and diffs the certified table against the frozen
+Stage 1 archive. Result, in `outputs/regression_stage1.txt`: **124 of 124 rows
+compared, 0 mismatches** — same verdict and the same predicted / measured / diff /
+interval / delta / MC error / numerical error on every row.
+
+**Correction (s2-v2).** All six rows now carry a bootstrap interval:
+a 4000-draw bootstrap of the 50 % point of the ignition-probability curve for
+P4's f_c (resampling the 100 replicates inside every reach cell, with monotone
+regularisation), and a bootstrap over background realisations for the P2-delay
+spreads and the two decay rows. P4 gains the N ladder A6 requires — a second rung
+at N = 2·10⁵ on a reduced reach grid, with the shift in the inferred f_c reported
+as `finite_N_bias`. The registered cell (N = 5·10⁴, 100 replicates per (λ, f)) is
+unchanged and remains the cell the verdict is taken on.
+
+**What was NOT changed.** No parameter, prediction, tolerance or rule of design
+v0.3 or specification v0.6. No δ was widened: every δ is still the A6 category
+value computed from the registered prediction. Nothing was tuned after the FAIL —
+the correction supplies a quantity A6 demanded and the harness had omitted, and
+the same rule is then applied to the same measurements.
+
+**Retained original.** `outputs_v1/` with `outputs_v1/README_v1.txt`.
+
+---
+
+## A1 — category A (scope of a registered prediction) — not corrected, reported
+
+**Item.** P1-delay. A4 registers: *"the invasion advantage of the second order is
+present at every delay, converging to the ratio 1.97 as τ₀ → ∞ (stance channel);
+any orientation-preparation contribution decays with e^{−ρτ₀}."*
+
+**Finding.** At **τ₀ = 0 the invasion-advantage ratio is exactly 1** — there is no
+advantage — and this is not a measurement artefact. The exact value follows from
+the same direct enumeration that reproduces C3.15 to 2×10⁻¹⁰ for both registered
+orders: the post-campaign T-acceptance probability is
+
+  q_T(τ₀) = e^{−ρτ₀} E[cos²φ_post] + (1 − e^{−ρτ₀}) p₊,
+
+and `E[cos²φ_post] = 1/2` for **both** orders. The reason is R8(b)'s own
+mechanism: from I2 the maximally mixed orientation is invariant under every
+projection, so a campaign applied to an isotropic population leaves the
+orientation channel carrying no order information at all. The whole advantage is
+generated by resets converting the stance law into orientation, which at τ₀ = 0
+have not yet acted. The measured ratio at τ₀ = 0 is 1.0006 with a 95 % interval
+of [0.992, 1.009] — consistent with the exact 1, and inconsistent with nothing.
+
+**Why this is A and not M.** The process, the specification and C3(c)(ii) all
+agree with each other and with the simulation; what is wrong is the *scope* of the
+sentence in A4, which asserts the advantage at every delay including τ₀ = 0.
+Under the reading "present at every delay in the registered set {0, 0.5, 1, 2, 5,
+10}/ρ" the claim is false at the first point; under the reading "present at every
+delay at which the stance channel has had any time to act, i.e. every τ₀ > 0" it
+is true, and the **measured** ratios 1.3836 [1.3748, 1.3924], 1.6177 [1.6075,
+1.6279], 1.8359 [1.8234, 1.8484], 1.9639 [1.9535, 1.9743] and 1.9651 [1.9525,
+1.9777] at τ₀ = 0.5, 1, 2, 5, 10 confirm it (certified table, N = 10⁵, 24
+backgrounds; the corresponding exact values are 1.381605, 1.613060, 1.838592,
+1.963312, 1.969802 and are listed separately in README.md's P1-delay table — an
+earlier version of this entry quoted four of the exact values as if they were
+measurements).
+
+**Not corrected.** A6 forbids tuning after a FAIL and the project instructions
+forbid modifying a prediction. The row is reported **INCONCLUSIVE** with
+`replicates_needed = None`, because no finite replicate count can place a
+confidence interval strictly above 1 at a point where the true value is 1. The
+registered numerical quantity of P1-delay — the limiting ratio 1.97 — is certified
+separately and PASSES.
+
+---
+
+## D1 — category UNDETERMINED between A and M — reported, not corrected
+
+**Item.** P4, the finite-amplitude threshold f_c. Primary endpoint; the only FAIL
+in Stage 2.
+
+| λ | registered f_c | measured f_c (95 % bootstrap) | d | δ (5 %) | verdict |
+|--:|--:|--:|--:|--:|:--|
+| 1.60 | 0.1270 ± 0.0020 | 0.13342 [0.13259, 0.13422] | +0.00642 | 0.00635 | INCONCLUSIVE (needs ≈1.3×10⁴ replicates) |
+| 1.75 | 0.0380 ± 0.0010 | 0.04382 [0.04336, 0.04443] | +0.00582 | 0.00190 | **FAIL** (+15.3 %) |
+| 1.90 | 0.0086 ± 0.0008 | 0.00731 [0.00648, 0.00763] | −0.00129 | 0.00043 | **FAIL** (−15.0 %) |
+
+**What the evidence rules out.**
+- *Not a simulator bug (S).* The same engine, in the same run, reproduces every
+  other registered P4 quantity: the λ = 1.40 extinction claim pathwise (0
+  violations over 500 runs), and A\* at all three λ (0.6364, 0.7472, 0.8132 against
+  the registered 0.63, 0.75, 0.81, each inside δ = 5 %). It reproduces every
+  registered number of P1, P1-delay, P2, P3 and P6 case A, and the whole Stage 1
+  suite bit-for-bit.
+- *Not finite-N smearing.* The N ladder to N = 2·10⁵ moves the inferred f_c by
+  −0.00056, −0.00015, −0.00012 — an order of magnitude below the discrepancies,
+  and **not** towards the registered values.
+- *Not horizon sensitivity.* f_c is bit-identical across t = 40, 80 and 160 at
+  λ = 1.60 and 1.75; at λ = 1.90 it shifts by 1.08×10⁻⁴ between t = 40 and t = 80
+  and is then identical at t = 80 and t = 160. That largest shift is 8.4 % of the
+  discrepancy at that λ, so the horizon cannot account for the disagreement.
+- *Not a one-sided estimator bias.* The sign flips: +15 % at λ = 1.75 and −15 % at
+  λ = 1.90.
+- *Not A_u.* The criterion is a wide separator — ignited runs land at A ≈ 0.64–0.81
+  against thresholds 1.5 A_u of 0.211, 0.086, 0.018 — so the verdict does not
+  depend on A_u's value.
+
+**Why the category cannot be assigned here.** The registered f_c values come from
+**C9(b)**, which is not a file in this project (S2-1 in AMBIGUITIES.md). Deciding
+between *an algebraic error in the registered prediction* (**A**) and *a model
+failure* (**M**) requires either C9(b) itself or an independent mean-field solve of
+the transient McKean–Vlasov equation at r = 1 to locate the separatrix in f. The
+second would amount to re-deriving a registered prediction, which the project
+instructions reserve; it is named here as the decisive next step rather than
+performed unilaterally.
+
+**Not corrected, nothing tuned.** A6 forbids tuning after a FAIL. The reach grids,
+replicate counts, criterion and δ are exactly as declared in
+`config/stage2_config.py` before the runs.
+
+---
+
+## Non-defects, recorded so they are not re-litigated
+
+- **P3's convergence row initially measured the wrong quantity.** A4 registers
+  *"predicted convergence of both orders to R = 0.0912λ = 0.365 at large delay"*,
+  which is the next-generation operator of the relaxed background — the offspring
+  count of a *typical offspring* — not the offspring count of the seed, whose
+  conviction is 1 by A1 and whose lifetime is therefore log 2 rather than
+  log 1.2. Caught in a smoke test before any certified run; the row measures
+  R_fr(τ₀ = 10) from the frozen operator check.
+- **The P6 case B frozen-rate fold could not be reconstructed.** See
+  AMBIGUITIES.md item S2-3. The attempt is recorded there with its refutation; no
+  number was produced and nothing was tuned.

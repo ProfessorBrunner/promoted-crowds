@@ -1,0 +1,20 @@
+  lam=1.5: A_+=0.298978 A_-=0.299075 (sd 1.01e-03/1.25e-03); flips 0, off-target 0
+     pert camp + +0.05: achieved +0.0500, |dA| at t=10 3.98e-03, relaxed 13/50
+     pert camp + -0.05: achieved -0.0500, |dA| at t=10 3.55e-03, relaxed 13/50
+     pert camp - +0.05: achieved +0.0500, |dA| at t=10 4.98e-03, relaxed 11/50
+     pert camp - -0.05: achieved -0.0500, |dA| at t=10 3.19e-03, relaxed 12/50
+  lam=2.0: A_+=0.423584 A_-=0.424215 (sd 1.28e-03/1.22e-03); flips 0, off-target 0
+     pert camp + +0.05: achieved +0.0500, |dA| at t=10 2.45e-03, relaxed 28/50
+     pert camp + -0.05: achieved -0.0500, |dA| at t=10 2.47e-03, relaxed 26/50
+     pert camp - +0.05: achieved +0.0500, |dA| at t=10 2.64e-03, relaxed 27/50
+     pert camp - -0.05: achieved -0.0500, |dA| at t=10 2.44e-03, relaxed 28/50
+  lam=3.0: A_+=0.482888 A_-=0.483186 (sd 1.44e-03/1.45e-03); flips 0, off-target 0
+     pert camp + +0.05: INFEASIBLE - not enough agents on the source side of the threshold in that camp
+     pert camp + -0.05: achieved -0.0500, |dA| at t=10 1.42e-03, relaxed 47/50
+     pert camp - +0.05: INFEASIBLE - not enough agents on the source side of the threshold in that camp
+     pert camp - -0.05: achieved -0.0500, |dA| at t=10 8.83e-04, relaxed 50/50
+  ladder N=25000: A_+=0.4234896 A_-=0.4242095
+  ladder N=50000: A_+=0.4234597 A_-=0.4243310
+  ladder N=100000: A_+=0.4235844 A_-=0.4242150
+  ladder N=200000: A_+=0.4235889 A_-=0.4241320
+done

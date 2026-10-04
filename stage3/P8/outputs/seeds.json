@@ -1,0 +1,31 @@
+{
+  "master_seed": 20261006,
+  "note": "distinct from 20261001-20261005",
+  "derivation": "crowd1.rng.derive_run_seed(MASTER_SEED, 8, N, rep)",
+  "cells": [
+    {
+      "N": 100,
+      "replicates": 100,
+      "T_max": 2000.0
+    },
+    {
+      "N": 200,
+      "replicates": 100,
+      "T_max": 2000.0
+    },
+    {
+      "N": 400,
+      "replicates": 100,
+      "T_max": 2000.0
+    },
+    {
+      "N": 800,
+      "replicates": 100,
+      "T_max": 2000.0
+    }
+  ],
+  "lam": 2.0,
+  "f": 0.5,
+  "c_h_declared": 0.01,
+  "per_run_seeds_in": "outputs/raw/p8_raw.json (cells[].seeds)"
+}

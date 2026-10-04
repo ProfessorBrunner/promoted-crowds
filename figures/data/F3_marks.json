@@ -1,0 +1,23 @@
+{
+ "kinetic_t_dagger": 70.30333287794207,
+ "kinetic_h": 0.0024996952111361955,
+ "kinetic_slabs": 436,
+ "crossing_level": 0.5603,
+ "adiabatic": 66.3,
+ "registered_t_dagger": 70.3,
+ "registered_t_dagger_err": 0.1,
+ "agent_t_dagger_mean": 70.35303633651682,
+ "agent_t_dagger_sd": 0.08533231254436888,
+ "replicates": 50,
+ "N": 100000,
+ "kinetic_t_dagger_reference": 70.32768783769728,
+ "kinetic_t_dagger_reference_unc": 0.024354959755214622,
+ "kinetic_t_dagger_finest_grid": 70.30333287794207,
+ "agent_t_dagger_sd_is": "standard deviation across the 50 replicate crossings",
+ "agent_t_dagger_mean_95_halfwidth": 0.02425117489728846,
+ "band_is": "pointwise 2.5th-97.5th percentile across the 50 replicate trajectories; a spread, NOT a confidence interval for the mean",
+ "agent_t_dagger_mean_CI_lo": 70.32878516161954,
+ "agent_t_dagger_mean_CI_hi": 70.37728751141411,
+ "mean_CI_construction": "a6.t_interval, Student-t with 49 df (the ledger construction)",
+ "kinetic_observed_order_in_h": 1.0586374161315752
+}

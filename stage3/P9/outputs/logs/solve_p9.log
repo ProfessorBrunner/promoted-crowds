@@ -1,0 +1,7 @@
+lam=1.5: symmetric A_+=A_-=0.299028897  residual 0.00e+00  spr(J)=0.705757  stable=True
+       C4.7 z-scan on (0,0.5): 25 points, 0 interior sign changes (residual range +0.0000 .. +0.4097)
+lam=2.0: symmetric A_+=A_-=0.423895616  residual 5.55e-17  spr(J)=0.378207  stable=True
+       C4.7 z-scan on (0,0.5): 25 points, 0 interior sign changes (residual range +0.0000 .. +0.4644)
+lam=3.0: symmetric A_+=A_-=0.483041685  residual 2.48e-14  spr(J)=0.126822  stable=True
+       C4.7 z-scan on (0,0.5): 25 points, 0 interior sign changes (residual range +0.0000 .. +0.4781)
+done

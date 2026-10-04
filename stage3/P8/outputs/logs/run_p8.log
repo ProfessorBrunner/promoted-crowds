@@ -1,0 +1,5 @@
+  N=100   extinct 0/100  -> median > T_max = 2000
+  N=200   extinct 0/100  -> median > T_max = 2000
+  N=400   extinct 0/100  -> median > T_max = 2000
+  N=800   extinct 0/100  -> median > T_max = 2000
+done

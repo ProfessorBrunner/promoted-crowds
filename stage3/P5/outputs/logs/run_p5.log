@@ -1,0 +1,16 @@
+  lam=1.0 f=0.01: survival 0/50, window mean A (cond) None
+  lam=1.0 f=0.1: survival 0/50, window mean A (cond) None
+  lam=2.0 f=0.01: survival 50/50, window mean A (cond) 0.50011818184
+  lam=2.0 f=0.1: survival 50/50, window mean A (cond) 0.49989095472
+  ladder lam=2 f=0.01 N=25000: 0.50019245408
+  ladder lam=2 f=0.01 N=50000: 0.4998412334
+  ladder lam=2 f=0.01 N=100000: 0.50011818184
+  ladder lam=2 f=0.01 N=200000: 0.49983511171000006
+  ladder lam=2 f=0.1 N=25000: 0.4998976862399999
+  ladder lam=2 f=0.1 N=50000: 0.49982122839999993
+  ladder lam=2 f=0.1 N=100000: 0.49989095472
+  ladder lam=2 f=0.1 N=200000: 0.49998489389
+  grid dt=0.04: 0.49988885631999996
+  grid dt=0.02: 0.49989065128
+  grid dt=0.01: 0.49989095472
+done

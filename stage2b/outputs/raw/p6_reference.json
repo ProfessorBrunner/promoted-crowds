@@ -1,0 +1,174 @@
+{
+  "case_A_kinetic": {
+    "rows": [
+      {
+        "h": 0.010005173926926205,
+        "t_cross": 70.2282474309999,
+        "Lambda": 165.7808874689327,
+        "lam_intA_total": 171.0568877236085,
+        "A0": 1.0,
+        "n_slabs": 436,
+        "J": 391,
+        "mass_deficit": 9.22272742193142e-05,
+        "slab_leak": 6.754665229989102e-59
+      },
+      {
+        "h": 0.0050025869634631025,
+        "t_cross": 70.27897791818685,
+        "Lambda": 166.6270263538557,
+        "lam_intA_total": 171.80661144389057,
+        "A0": 1.0,
+        "n_slabs": 436,
+        "J": 782,
+        "mass_deficit": 1.1851329406287192e-05,
+        "slab_leak": 4.260684727690412e-58
+      },
+      {
+        "h": 0.0024996952111361955,
+        "t_cross": 70.30333287794207,
+        "Lambda": 167.03805848769238,
+        "lam_intA_total": 172.1723726081938,
+        "A0": 1.0,
+        "n_slabs": 436,
+        "J": 1565,
+        "mass_deficit": 1.4987694226809012e-06,
+        "slab_leak": 1.4870916829168818e-57
+      }
+    ],
+    "t_dagger": {
+      "value_finest": 70.30333287794207,
+      "observed_order": 1.0586374161315752,
+      "richardson": 70.32768783769728,
+      "uncertainty": 0.024354959755214622
+    },
+    "registered": 70.3,
+    "registered_err": 0.1
+  },
+  "case_B_kinetic": {
+    "rows": [
+      {
+        "h": 0.009989523180017551,
+        "t_cross": 12.8562085626207,
+        "Lambda": 25.2110735165871,
+        "lam_intA_total": 25.764828189712645,
+        "A0": 1.0,
+        "n_slabs": 196,
+        "J": 461,
+        "mass_deficit": 9.048735945094144e-06,
+        "slab_leak": 1.0292765356156398e-93
+      },
+      {
+        "h": 0.00500018478391758,
+        "t_cross": 12.880883605888895,
+        "Lambda": 25.320461571523907,
+        "lam_intA_total": 25.872189004116603,
+        "A0": 1.0,
+        "n_slabs": 196,
+        "J": 921,
+        "mass_deficit": 1.1568788511606698e-06,
+        "slab_leak": 4.192439206314825e-93
+      },
+      {
+        "h": 0.00250009239195879,
+        "t_cross": 12.893164069650311,
+        "Lambda": 25.374649187756386,
+        "lam_intA_total": 25.925410368641945,
+        "A0": 1.0,
+        "n_slabs": 196,
+        "J": 1842,
+        "mass_deficit": 1.460027092559102e-07,
+        "slab_leak": 1.1832206571227363e-92
+      },
+      {
+        "h": 0.001250046195979395,
+        "t_cross": 12.899281631489627,
+        "Lambda": 25.401612317079202,
+        "lam_intA_total": 25.95189944845354,
+        "A0": 1.0,
+        "n_slabs": 196,
+        "J": 3684,
+        "mass_deficit": 1.8337787510702697e-08,
+        "slab_leak": 2.8050522386369157e-92
+      },
+      {
+        "h": 0.0006250230979896975,
+        "t_cross": 12.902335094656832,
+        "Lambda": 25.415048842920935,
+        "lam_intA_total": 25.965103131979546,
+        "A0": 1.0,
+        "n_slabs": 196,
+        "J": 7368,
+        "mass_deficit": 2.297703916021021e-09,
+        "slab_leak": 6.105206827802415e-92
+      }
+    ],
+    "t_star": {
+      "value_finest": 12.902335094656832,
+      "observed_order": 1.0025103372570574,
+      "richardson": 12.905388557824038,
+      "uncertainty": 0.00305346316720545
+    },
+    "Lambda_star": {
+      "value_finest": 25.415048842920935,
+      "observed_order": 1.0048277824476426,
+      "richardson": 25.42848536876267,
+      "uncertainty": 0.013436525841733271
+    },
+    "lam_intA_total": {
+      "value_finest": 25.965103131979546,
+      "observed_order": 1.0044572629649398,
+      "richardson": 25.978306815505555,
+      "uncertainty": 0.013203683526008092
+    },
+    "level": 0.325
+  },
+  "case_B_agents": {
+    "N": 100000,
+    "replicates": 50,
+    "per_level": [
+      {
+        "level": 0.4,
+        "n_crossed": 50,
+        "t_cross_mean_of_replicates": 12.581263762426488,
+        "t_cross_sd": 0.015484940145701304,
+        "Lambda_mean_of_replicates": 25.31161028407891,
+        "Lambda_sd": 0.027086214364588697,
+        "t_cross_of_mean_trajectory": 12.581129362314032,
+        "Lambda_at_mean_trajectory_crossing": 25.311381122161382
+      },
+      {
+        "level": 0.35,
+        "n_crossed": 50,
+        "t_cross_mean_of_replicates": 12.801037812860912,
+        "t_cross_sd": 0.015754833015839888,
+        "Lambda_mean_of_replicates": 25.51166157415287,
+        "Lambda_sd": 0.027362104282318233,
+        "t_cross_of_mean_trajectory": 12.801098964803314,
+        "Lambda_at_mean_trajectory_crossing": 25.51191757336605
+      },
+      {
+        "level": 0.325,
+        "n_crossed": 50,
+        "t_cross_mean_of_replicates": 12.90419095848989,
+        "t_cross_sd": 0.015305166165166376,
+        "Lambda_mean_of_replicates": 25.59557268741984,
+        "Lambda_sd": 0.026946518603403555,
+        "t_cross_of_mean_trajectory": 12.904440781615785,
+        "Lambda_at_mean_trajectory_crossing": 25.595892118182356
+      },
+      {
+        "level": 0.3,
+        "n_crossed": 50,
+        "t_cross_mean_of_replicates": 13.003855493793203,
+        "t_cross_sd": 0.014523530075981245,
+        "Lambda_mean_of_replicates": 25.670322349279115,
+        "Lambda_sd": 0.02566815917895756,
+        "t_cross_of_mean_trajectory": 13.00392571734206,
+        "Lambda_at_mean_trajectory_crossing": 25.670504534634162
+      }
+    ],
+    "lam_intA_total_mean": 25.972608230871277,
+    "lam_intA_total_sd": 0.02456435560644096,
+    "sample_dt": 0.1
+  }
+}

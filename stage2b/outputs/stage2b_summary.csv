@@ -1,0 +1,11 @@
+task,quantity,reference,measured,note
+1,"P1-delay frozen-background proxy, between-order ratio at tau0=0",1.0000000 (exact),1.00044 +- 0.00406,proxy: E[cos^2 phi]=1/2 both orders by R8(b)
+1,"P1-delay time-dependent E Z1, between-order ratio at tau0=0","1.2702501 (owner's formula, independently re-derived bit-for-bit)",1.27479 +- 0.00531,advantage present at every delay for this estimand
+1,"P1-delay time-dependent ratio, tau0 = 0.5/1/2/5/10",1.5455197 / 1.7124792 / 1.8751663 / 1.9651325 / 1.9698145,1.54939 / 1.71506 / 1.87402 / 1.95918 / 1.96282,max |z| = 1.450 over all 12 ratio rows
+2,P4 f_c^MF at lambda = 1.60,"agent f50 = 0.133422 [0.132588, 0.134220]; Appendix F 0.1270 +- 0.0020",0.132734 +- 0.00093,overlaps agents; disjoint from Appendix F
+2,P4 f_c^MF at lambda = 1.75,"agent f50 = 0.043815 [0.043361, 0.044434]; Appendix F 0.0380 +- 0.0010",0.044097 +- 0.00048,overlaps agents; disjoint from Appendix F
+2,P4 f_c^MF at lambda = 1.90,"agent f50 = 0.007310 [0.006476, 0.007633]; Appendix F 0.0086 +- 0.0008",0.007094 +- 0.00026,overlaps agents; disjoint from Appendix F -> category A
+3,P6 case A t_dagger (solver validation),registered 70.3 +- 0.1,70.32769 +- 0.02435,counter-resolved solver validated
+3,P6 case B t* at A = 0.325 (mean field),none registered,12.90539 +- 0.00305,order 1.003 over four halvings
+3,P6 case B Lambda* at A = 0.325 (mean field),Appendix F 25.4 (3 s.f.); 25.38 unverified,25.42849 +- 0.01344,25.4 recovered at its stated precision; 25.38 not reproduced
+3,"P6 case B t* / Lambda* at A = 0.325 (agents, N=1e5, 50 reps)",mean field 12.90539 / 25.42849,12.904191 / 25.59557 (mean of replicate crossings); 12.904441 / 25.59589 (mean trajectory),two estimands differ by 1.6% of the replicate sd; finite-N offset in Lambda* +0.66%

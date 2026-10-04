@@ -1,0 +1,5 @@
+"""CROWD-1 Stage 1: exact finite-N simulator of process specification v0.6."""
+__spec_version__ = "review_packet_v0_6_1.md / PROCESS SPECIFICATION v0.6"
+__design_version__ = "crowd1_cs_design_and_manuscript_brief_v0_3.md / Part A (v0.3)"
+__stage__ = "Stage 1 (A1 + A2, tests T1-T6) only"
+__archive_version__ = "v3 (v1, v2 retained in outputs_v1/, outputs_v2/; see BUGLOG.md B1, B2)"

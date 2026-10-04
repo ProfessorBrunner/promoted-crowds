@@ -1,0 +1,64 @@
+{
+  "T_max": 2000.0,
+  "lam": 2.0,
+  "f": 0.5,
+  "replicates": 100,
+  "A_star": 0.5,
+  "rows": [
+    {
+      "N": 100,
+      "replicates": 100,
+      "n_extinct": 0,
+      "n_censored": 100,
+      "fraction_extinct": 0.0,
+      "median_extinction_time": "median > T_max = 2000",
+      "km_survival_at_T_max": 1.0,
+      "mean_A_over_run": 0.47673325750614437,
+      "A_star": 0.5,
+      "depression_below_A_star": 0.02326674249385563,
+      "status": "REPORTED (no registered number; no verdict)"
+    },
+    {
+      "N": 200,
+      "replicates": 100,
+      "n_extinct": 0,
+      "n_censored": 100,
+      "fraction_extinct": 0.0,
+      "median_extinction_time": "median > T_max = 2000",
+      "km_survival_at_T_max": 1.0,
+      "mean_A_over_run": 0.4938781926269027,
+      "A_star": 0.5,
+      "depression_below_A_star": 0.00612180737309731,
+      "status": "REPORTED (no registered number; no verdict)"
+    },
+    {
+      "N": 400,
+      "replicates": 100,
+      "n_extinct": 0,
+      "n_censored": 100,
+      "fraction_extinct": 0.0,
+      "median_extinction_time": "median > T_max = 2000",
+      "km_survival_at_T_max": 1.0,
+      "mean_A_over_run": 0.4971518538952223,
+      "A_star": 0.5,
+      "depression_below_A_star": 0.0028481461047776824,
+      "status": "REPORTED (no registered number; no verdict)"
+    },
+    {
+      "N": 800,
+      "replicates": 100,
+      "n_extinct": 0,
+      "n_censored": 100,
+      "fraction_extinct": 0.0,
+      "median_extinction_time": "median > T_max = 2000",
+      "km_survival_at_T_max": 1.0,
+      "mean_A_over_run": 0.4986421676236127,
+      "A_star": 0.5,
+      "depression_below_A_star": 0.0013578323763873135,
+      "status": "REPORTED (no registered number; no verdict)"
+    }
+  ],
+  "total_runs": 400,
+  "total_extinctions": 0,
+  "reporting_rule": "owner 2026-10-01: right-censored at T_max = 2000; if fewer than half the runs extinguish, report 'median > T_max'; no median from observed extinctions alone"
+}

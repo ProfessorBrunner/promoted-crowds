@@ -1,0 +1,22 @@
+P4 f_c^MF - floor ladder at fixed h = 0.004, T = 120
+  lam=1.6  c_min=1e-03  f_c = 0.13648643  (+-3.8e-07, 17 evals)
+  lam=1.6  c_min=1e-04  f_c = 0.13643532  (+-3.8e-07, 17 evals)
+  lam=1.6  c_min=1e-05  f_c = 0.13643379  (+-3.8e-07, 17 evals)
+  lam=1.75  c_min=1e-03  f_c = 0.04603973  (+-3.1e-07, 17 evals)
+  lam=1.75  c_min=1e-04  f_c = 0.04601349  (+-3.1e-07, 17 evals)
+  lam=1.75  c_min=1e-05  f_c = 0.04601227  (+-3.1e-07, 17 evals)
+  lam=1.9  c_min=1e-03  f_c = 0.00814166  (+-4.3e-07, 15 evals)
+  lam=1.9  c_min=1e-04  f_c = 0.00813055  (+-4.3e-07, 15 evals)
+  lam=1.9  c_min=1e-05  f_c = 0.00812970  (+-4.3e-07, 15 evals)
+
+P6 case A - floor ladder at fixed h = 0.01, T = 95
+  c_min=2e-02  t_cross = 70.22825  J=391 slabs=436 mass_at_zero=1.00e+00
+  c_min=1e-03  t_cross = 70.22955  J=691 slabs=436 mass_at_zero=1.00e+00
+  c_min=1e-04  t_cross = 70.22950  J=921 slabs=436 mass_at_zero=1.00e+00
+
+P6 case B - floor ladder at fixed h = 0.0025, T = 40
+  c_min=1e-02  t_cross = 12.89316  Lambda = 25.37465  J=1842 slabs=196 mass_at_zero=1.00e+00
+  c_min=1e-03  t_cross = 12.89323  Lambda = 25.37477  J=2763 slabs=196 mass_at_zero=1.00e+00
+  c_min=1e-04  t_cross = 12.89323  Lambda = 25.37477  J=3684 slabs=196 mass_at_zero=1.00e+00
+
+wrote /Users/rb/Desktop/Crowd1/stage2b/outputs/raw/floor_audit.json

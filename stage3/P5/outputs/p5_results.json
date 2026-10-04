@@ -1,0 +1,471 @@
+{
+  "verdicts": [
+    {
+      "name": "P5 active-branch mean A over [20,70] at lambda=2, f=0.01 (conditional on A(20)>0)",
+      "predicted": 0.5,
+      "measured": 0.50011818184,
+      "diff": 0.00011818184000000898,
+      "ci_lo": -3.4478602440879413e-05,
+      "ci_hi": 0.00027084228244089736,
+      "delta": 0.025,
+      "delta_basis": "A6/A4b trajectory marker: 5% of A* = 0.5",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00015266044244087576,
+      "finite_N_bias": 2.7955795217582402e-05,
+      "numerical_error": 3.034400000156978e-07,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "A* = 1-exp(-lambda L A*) is EXACTLY 0.5 at lambda=2, L=ln2; the exact delay-equation reference gives window mean 0.499999999; survivors 50/50"
+    },
+    {
+      "name": "P5 mean A over [20,70] at lambda=1, f=0.01 (activity dies)",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 3.988810517790896e-15,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "lambda L = 0.693147 < 1; exact mean-field A(20) = 5.219e-11, and every finite-N run is exactly extinct by t=20 (survivors 0/50)"
+    },
+    {
+      "name": "P5 pathwise extinction at lambda=1, f=0.01: A(t)=0 for all t>=20",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.0,
+      "delta_basis": "pathwise structural identity: any violation is a FAIL",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "0 grid points with A>0 at or after t=20 across 50 replicates"
+    },
+    {
+      "name": "P5 active-branch mean A over [20,70] at lambda=2, f=0.1 (conditional on A(20)>0)",
+      "predicted": 0.5,
+      "measured": 0.49989095472,
+      "diff": -0.00010904527999999747,
+      "ci_lo": -0.00025682975023161303,
+      "ci_hi": 3.873919023156258e-05,
+      "delta": 0.025,
+      "delta_basis": "A6/A4b trajectory marker: 5% of A* = 0.5",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00014778447023159076,
+      "finite_N_bias": 5.396542478225408e-05,
+      "numerical_error": 3.034400000156978e-07,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "A* = 1-exp(-lambda L A*) is EXACTLY 0.5 at lambda=2, L=ln2; the exact delay-equation reference gives window mean 0.500000000; survivors 50/50"
+    },
+    {
+      "name": "P5 mean A over [20,70] at lambda=1, f=0.1 (activity dies)",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 3.164552252030439e-14,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "lambda L = 0.693147 < 1; exact mean-field A(20) = 4.353e-10, and every finite-N run is exactly extinct by t=20 (survivors 0/50)"
+    },
+    {
+      "name": "P5 pathwise extinction at lambda=1, f=0.1: A(t)=0 for all t>=20",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.0,
+      "delta_basis": "pathwise structural identity: any violation is a FAIL",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "0 grid points with A>0 at or after t=20 across 50 replicates"
+    }
+  ],
+  "finite_N_bias": {
+    "0.01": {
+      "ladder": [
+        [
+          25000,
+          0.50019245408
+        ],
+        [
+          50000,
+          0.4998412334
+        ],
+        [
+          100000,
+          0.50011818184
+        ],
+        [
+          200000,
+          0.49983511171000006
+        ]
+      ],
+      "top_gap": 0.0002830701299999516,
+      "extrapolated_Ninf": 0.49986306750521764,
+      "slope_per_inverse_N": 7.129480121737782,
+      "residual_bias_at_Nmax": 2.7955795217582402e-05
+    },
+    "0.1": {
+      "ladder": [
+        [
+          25000,
+          0.4998976862399999
+        ],
+        [
+          50000,
+          0.49982122839999993
+        ],
+        [
+          100000,
+          0.49989095472
+        ],
+        [
+          200000,
+          0.49998489389
+        ]
+      ],
+      "top_gap": 9.39391700000014e-05,
+      "extrapolated_Ninf": 0.49993092846521775,
+      "slope_per_inverse_N": -1.719341478265207,
+      "residual_bias_at_Nmax": 5.396542478225408e-05
+    }
+  },
+  "measurement_grid_error": 3.034400000156978e-07,
+  "grid_refinement": [
+    [
+      0.04,
+      0.49988885631999996
+    ],
+    [
+      0.02,
+      0.49989065128
+    ],
+    [
+      0.01,
+      0.49989095472
+    ]
+  ],
+  "survival": [
+    {
+      "lam": 1.0,
+      "f": 0.01,
+      "registered_50": {
+        "k": 0,
+        "n": 50,
+        "p": 0.0,
+        "lo": 6.938893903907228e-18,
+        "hi": 0.07134759913335872,
+        "half_width": 0.035673799566679355
+      },
+      "extended": {
+        "k": 0,
+        "n": 450,
+        "p": 0.0,
+        "lo": 8.673617379884035e-19,
+        "hi": 0.008464318862970662,
+        "half_width": 0.004232159431485331
+      }
+    },
+    {
+      "lam": 1.0,
+      "f": 0.1,
+      "registered_50": {
+        "k": 0,
+        "n": 50,
+        "p": 0.0,
+        "lo": 6.938893903907228e-18,
+        "hi": 0.07134759913335872,
+        "half_width": 0.035673799566679355
+      },
+      "extended": {
+        "k": 0,
+        "n": 450,
+        "p": 0.0,
+        "lo": 8.673617379884035e-19,
+        "hi": 0.008464318862970662,
+        "half_width": 0.004232159431485331
+      }
+    },
+    {
+      "lam": 2.0,
+      "f": 0.01,
+      "registered_50": {
+        "k": 50,
+        "n": 50,
+        "p": 1.0,
+        "lo": 0.9286524008666414,
+        "hi": 1.0,
+        "half_width": 0.035673799566679355
+      },
+      "extended": {
+        "k": 450,
+        "n": 450,
+        "p": 1.0,
+        "lo": 0.9915356811370294,
+        "hi": 1.0,
+        "half_width": 0.004232159431485331
+      }
+    },
+    {
+      "lam": 2.0,
+      "f": 0.1,
+      "registered_50": {
+        "k": 50,
+        "n": 50,
+        "p": 1.0,
+        "lo": 0.9286524008666414,
+        "hi": 1.0,
+        "half_width": 0.035673799566679355
+      },
+      "extended": {
+        "k": 450,
+        "n": 450,
+        "p": 1.0,
+        "lo": 0.9915356811370294,
+        "hi": 1.0,
+        "half_width": 0.004232159431485331
+      }
+    }
+  ],
+  "outbreak_A4a": [
+    {
+      "lam": 1.0,
+      "f": 0.01,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_frac_mean": 0.0326074
+    },
+    {
+      "lam": 1.0,
+      "f": 0.1,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_frac_mean": 0.2650742
+    },
+    {
+      "lam": 2.0,
+      "f": 0.01,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_frac_mean": 1.0
+    },
+    {
+      "lam": 2.0,
+      "f": 0.1,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_frac_mean": 1.0
+    }
+  ],
+  "reference": {
+    "A_star_lambda2": 0.5,
+    "A_star_lambda1": 0.0,
+    "rows": [
+      {
+        "lam": 1.0,
+        "f": 0.01,
+        "ladder": [
+          {
+            "h": 0.0019975423070891793,
+            "window_mean_A": 1.0472038410498072e-12,
+            "A_at_20": 5.2281915603109275e-11,
+            "A_at_70": 1.2212453270876722e-15,
+            "A_max": 0.0198019801980198
+          },
+          {
+            "h": 0.0010002123817603827,
+            "window_mean_A": 1.0462625862383172e-12,
+            "A_at_20": 5.222991054924988e-11,
+            "A_at_70": 2.4424906541753444e-15,
+            "A_max": 0.019801980198019802
+          },
+          {
+            "h": 0.0005001061908801914,
+            "window_mean_A": 1.0476416056528195e-12,
+            "A_at_20": 5.220412598218185e-11,
+            "A_at_70": 4.773959005888173e-15,
+            "A_max": 0.019801980198019802
+          },
+          {
+            "h": 0.0002499629212260892,
+            "window_mean_A": 1.0516304161706104e-12,
+            "A_at_20": 5.2191106748719534e-11,
+            "A_at_70": 9.658940314238862e-15,
+            "A_max": 0.019801980198019802
+          }
+        ],
+        "observed_order": -1.532315824126418,
+        "window_mean_richardson": 1.0556192266884013e-12,
+        "uncertainty": 3.988810517790896e-15,
+        "A_at_20": 5.2191106748719534e-11,
+        "A_at_70": 9.658940314238862e-15,
+        "A_max": 0.019801980198019802
+      },
+      {
+        "lam": 1.0,
+        "f": 0.1,
+        "ladder": [
+          {
+            "h": 0.0019975423070891793,
+            "window_mean_A": 8.732911885189119e-12,
+            "A_at_20": 4.360137024850618e-10,
+            "A_at_70": 9.658940314238862e-15,
+            "A_max": 0.1818181818181818
+          },
+          {
+            "h": 0.0010002123817603827,
+            "window_mean_A": 8.725596763071229e-12,
+            "A_at_20": 4.356317167945283e-10,
+            "A_at_70": 1.9206858326015208e-14,
+            "A_max": 0.18181818181818182
+          },
+          {
+            "h": 0.0005001061908801914,
+            "window_mean_A": 8.737365188763192e-12,
+            "A_at_20": 4.3544153704112556e-10,
+            "A_at_70": 3.8413716652030416e-14,
+            "A_max": 0.18181818181818182
+          },
+          {
+            "h": 0.0002499629212260892,
+            "window_mean_A": 8.769010711283496e-12,
+            "A_at_20": 4.3534602274820915e-10,
+            "A_at_70": 7.693845560652335e-14,
+            "A_max": 0.18181818181818182
+          }
+        ],
+        "observed_order": -1.4270800508740027,
+        "window_mean_richardson": 8.800656233803801e-12,
+        "uncertainty": 3.164552252030439e-14,
+        "A_at_20": 4.3534602274820915e-10,
+        "A_at_70": 7.693845560652335e-14,
+        "A_max": 0.18181818181818182
+      },
+      {
+        "lam": 2.0,
+        "f": 0.01,
+        "ladder": [
+          {
+            "h": 0.0019975423070891793,
+            "window_mean_A": 0.4999999993902742,
+            "A_at_20": 0.49999996954304066,
+            "A_at_70": 0.5000000000009388,
+            "A_max": 0.5000000000009388
+          },
+          {
+            "h": 0.0010002123817603827,
+            "window_mean_A": 0.49999999939074274,
+            "A_at_20": 0.4999999695273062,
+            "A_at_70": 0.4999999999978906,
+            "A_max": 0.5000000000003526
+          },
+          {
+            "h": 0.0005001061908801914,
+            "window_mean_A": 0.49999999938907896,
+            "A_at_20": 0.49999996951933945,
+            "A_at_70": 0.5000000000028146,
+            "A_max": 0.5000000000028146
+          },
+          {
+            "h": 0.0002499629212260892,
+            "window_mean_A": 0.4999999993882426,
+            "A_at_20": 0.4999999695153456,
+            "A_at_70": 0.5000000000066942,
+            "A_max": 0.5000000000066942
+          }
+        ],
+        "observed_order": 0.9922231669864432,
+        "window_mean_richardson": 0.4999999993874062,
+        "uncertainty": 8.363865156013617e-13,
+        "A_at_20": 0.4999999695153456,
+        "A_at_70": 0.5000000000066942,
+        "A_max": 0.5000000000066942
+      },
+      {
+        "lam": 2.0,
+        "f": 0.1,
+        "ladder": [
+          {
+            "h": 0.0019975423070891793,
+            "window_mean_A": 0.4999999999593101,
+            "A_at_20": 0.4999999979761543,
+            "A_at_70": 0.5000000000009388,
+            "A_max": 0.5000000000009388
+          },
+          {
+            "h": 0.0010002123817603827,
+            "window_mean_A": 0.49999999995944544,
+            "A_at_20": 0.4999999979743545,
+            "A_at_70": 0.4999999999978906,
+            "A_max": 0.5000000000003526
+          },
+          {
+            "h": 0.0005001061908801914,
+            "window_mean_A": 0.49999999995813904,
+            "A_at_20": 0.4999999979734366,
+            "A_at_70": 0.5000000000028146,
+            "A_max": 0.5000000000028146
+          },
+          {
+            "h": 0.0002499629212260892,
+            "window_mean_A": 0.49999999995765726,
+            "A_at_20": 0.49999999797300737,
+            "A_at_70": 0.5000000000066942,
+            "A_max": 0.5000000000066942
+          }
+        ],
+        "observed_order": 1.4391458226430156,
+        "window_mean_richardson": 0.4999999999571755,
+        "uncertainty": 4.817812815360867e-13,
+        "A_at_20": 0.49999999797300737,
+        "A_at_70": 0.5000000000066942,
+        "A_max": 0.5000000000066942
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+P4 f_c^MF - floor shift at two h, T = 240
+  h=0.0040 lam=1.6  c_min=1e-03  f_c = 0.13648643  (+-3.8e-07, 17 evals)
+  h=0.0040 lam=1.6  c_min=1e-05  f_c = 0.13643379  (+-3.8e-07, 17 evals)
+  h=0.0040 lam=1.75  c_min=1e-03  f_c = 0.04603973  (+-3.1e-07, 17 evals)
+  h=0.0040 lam=1.75  c_min=1e-05  f_c = 0.04601227  (+-3.1e-07, 17 evals)
+  h=0.0040 lam=1.9  c_min=1e-03  f_c = 0.00814166  (+-4.3e-07, 15 evals)
+  h=0.0040 lam=1.9  c_min=1e-05  f_c = 0.00812970  (+-4.3e-07, 15 evals)
+  h=0.0020 lam=1.6  c_min=1e-03  f_c = 0.13460197  (+-3.8e-07, 17 evals)
+  h=0.0020 lam=1.6  c_min=1e-05  f_c = 0.13454933  (+-3.8e-07, 17 evals)
+  h=0.0020 lam=1.75  c_min=1e-03  f_c = 0.04506500  (+-3.1e-07, 17 evals)
+  h=0.0020 lam=1.75  c_min=1e-05  f_c = 0.04503754  (+-3.1e-07, 17 evals)
+  h=0.0020 lam=1.9  c_min=1e-03  f_c = 0.00761530  (+-4.3e-07, 15 evals)
+  h=0.0020 lam=1.9  c_min=1e-05  f_c = 0.00760333  (+-4.3e-07, 15 evals)
+  floor shift (c_min 1e-3 -> 1e-5), h-independence check:
+    lam=1.6,h=0.004: -5.2643e-05
+    lam=1.75,h=0.004: -2.7466e-05
+    lam=1.9,h=0.004: -1.1963e-05
+    lam=1.6,h=0.002: -5.2643e-05
+    lam=1.75,h=0.002: -2.7466e-05
+    lam=1.9,h=0.002: -1.1963e-05
+
+P6 case A - floor shift at a second h (0.02), T = 95
+  c_min=2e-02  t_cross = 70.11301  J=196
+  c_min=1e-03  t_cross = 70.11364  J=345
+
+P6 case B - floor shift at a second h (0.005), T = 40
+  c_min=1e-02  t_cross = 12.88088  Lambda = 25.32046  J=921
+  c_min=1e-03  t_cross = 12.88096  Lambda = 25.32061  J=1382
+
+wrote /Users/rb/Desktop/Crowd1/stage2b/outputs/raw/floor_audit.json

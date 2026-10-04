@@ -1,0 +1,17 @@
+{
+  "level": 0.325,
+  "t_star_linear": 12.898207560951525,
+  "t_star_cubic6": 12.904404019139973,
+  "t_star_cubic4": 12.903622058909836,
+  "Lambda_star_linear": 25.580644332979062,
+  "Lambda_star_cubic6": 25.604621775909,
+  "Lambda_star_cubic4": 25.59571094092623,
+  "interp_err_t": 0.006196458188448162,
+  "interp_err_L": 0.023977442929936643,
+  "source": "stage2/outputs/stage2_results.json reported_diagnostics/P6",
+  "nodes": [
+    0.3,
+    0.4
+  ],
+  "estimand": "mean of replicate crossings"
+}

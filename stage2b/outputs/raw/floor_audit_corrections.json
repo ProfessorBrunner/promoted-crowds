@@ -1,0 +1,76 @@
+{
+  "P4": [
+    {
+      "lam": 1.6,
+      "published": 0.13273365571353912,
+      "unc_h": 0.0009343111371823976,
+      "floor_shift": -5.264282226560835e-05,
+      "corrected": 0.13268101289127351,
+      "floor_error": 1.5258789062555511e-06,
+      "h_independence_of_shift": 5.551115123125783e-17,
+      "overlaps_agent": true,
+      "disjoint_from_appendixF": true
+    },
+    {
+      "lam": 1.75,
+      "published": 0.044096936532220646,
+      "unc_h": 0.0004839526886878248,
+      "floor_shift": -2.7465820312495837e-05,
+      "corrected": 0.04406947071190815,
+      "floor_error": 1.2207031249988898e-06,
+      "h_independence_of_shift": 6.938893903907228e-18,
+      "overlaps_agent": true,
+      "disjoint_from_appendixF": true
+    },
+    {
+      "lam": 1.9,
+      "published": 0.007094065426931745,
+      "unc_h": 0.00026050088909657966,
+      "floor_shift": -1.196289062500161e-05,
+      "corrected": 0.007082102536306744,
+      "floor_error": 8.544921875006106e-07,
+      "h_independence_of_shift": 0.0,
+      "overlaps_agent": true,
+      "disjoint_from_appendixF": true
+    }
+  ],
+  "P6A": {
+    "published": 70.32768783769728,
+    "unc_h": 0.024354959755214622,
+    "matched_floor_effect": 0.00013705789872631158,
+    "corrected": null,
+    "reason_no_correction": "published ladder ran at c_min=2e-2; the matched-h construction pins the effect only between 1e-2 and 1e-4, and the 2e-2 -> 1e-2 step is not commensurate. A clean correction needs a floor ladder at every h rung (436 slabs at c_min=1e-4). Effect is 0.56% of the h error and 0.14% of the registered +-0.1.",
+    "pct_of_h_error": 0.5627514892401586
+  },
+  "P6B": {
+    "t_star": {
+      "published": 12.905388557824038,
+      "unc_h": 0.00305346316720545,
+      "matched_floor_effect": 6.886275287421029e-05,
+      "corrected": 12.905457420576912
+    },
+    "Lambda_star": {
+      "published": 25.42848536876267,
+      "unc_h": 0.013436525841733271,
+      "matched_floor_effect": 0.00012248477858634033,
+      "corrected": 25.428607853541255
+    },
+    "verdict_recheck": [
+      {
+        "estimand": "mean of replicate crossings",
+        "measured": 25.4313,
+        "diff": 0.0026921464587452704,
+        "delta": 1.2714242684381336,
+        "status": "PASS"
+      },
+      {
+        "estimand": "mean trajectory",
+        "measured": 25.43138,
+        "diff": 0.0027721464587457945,
+        "delta": 1.2714242684381336,
+        "status": "PASS"
+      }
+    ]
+  },
+  "verdicts_changed": 0
+}

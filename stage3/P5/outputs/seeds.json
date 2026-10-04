@@ -1,0 +1,62 @@
+{
+  "master_seed": 20261003,
+  "note": "distinct from Stage 1 (20261001) and Stage 2 / 2B (20261002)",
+  "derivation": "crowd1.rng.derive_run_seed(MASTER_SEED, 5, int(lam*100), int(f*1000), N, rep)",
+  "streams_per_run": {
+    "0": "clocks (incl. the reconsideration +/- coin)",
+    "1": "recipient",
+    "2": "acceptance coins",
+    "3": "cohort",
+    "4": "initial law",
+    "5": "exogenous"
+  },
+  "cells": [
+    {
+      "lam": 1.0,
+      "f": 0.01,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "lam": 1.0,
+      "f": 0.1,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "lam": 2.0,
+      "f": 0.01,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "lam": 2.0,
+      "f": 0.1,
+      "N": 100000,
+      "replicates": 50
+    }
+  ],
+  "N_ladder": [
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "sample_dt_ladder": [
+    0.04,
+    0.02,
+    0.01
+  ],
+  "survival_extension": {
+    "replicates_total": 450,
+    "horizon": 20.0,
+    "seeding": "same derivation; rep index runs 0..449, so the first 50 reproduce the registered cells' seeds exactly"
+  },
+  "per_run_seeds_in": [
+    "outputs/raw/p5_raw.json",
+    "outputs/raw/p5_survival_extension.json"
+  ],
+  "deterministic_no_rng": [
+    "delay_reference.py"
+  ]
+}

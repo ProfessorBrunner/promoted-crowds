@@ -1,0 +1,5 @@
+  lam=1.9 T=240 h=0.0040 c_min=1e-03  f_c = 0.00814166 (+-4.3e-07, 15 evals)
+  lam=1.9 T=240 h=0.0040 c_min=1e-05  f_c = 0.00812970 (+-4.3e-07, 15 evals)
+  lam=1.9 T=240 h=0.0020 c_min=1e-03  f_c = 0.00761530 (+-4.3e-07, 15 evals)
+  lam=1.9 T=240 h=0.0020 c_min=1e-05  f_c = 0.00760333 (+-4.3e-07, 15 evals)
+wrote /Users/rb/Desktop/Crowd1/stage2b/outputs/raw/floor_audit.json

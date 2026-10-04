@@ -1,0 +1,16 @@
+  horizon T=30.0   P_nu(0.5568) = 0.3751629914
+  horizon T=60.0   P_nu(0.5568) = 0.3751629911
+  horizon T=120.0  P_nu(0.5568) = 0.3751629903
+  h=0.008  lambda_fold=1.489021915  nu_f=0.559809216  A_fold=0.375957674  (27 evals)
+  h=0.004  lambda_fold=1.485768386  nu_f=0.558375305  A_fold=0.375815847  (24 evals)
+  h=0.002  lambda_fold=1.484154365  nu_f=0.557658011  A_fold=0.375741247  (20 evals)
+  h=0.001  lambda_fold=1.483349507  nu_f=0.557299298  A_fold=0.375703296  (25 evals)
+
+lam_fold: Richardson 1.482544649 +- 8.05e-04  (order 1.0038536832763016)  manuscript 1.48251  deviation +3.46e-05
+
+nu_f: Richardson 0.556940585 +- 3.59e-04  (order 0.9997321613333663)  manuscript 0.556791  deviation +1.50e-04
+
+A_fold: Richardson 0.375665345 +- 3.80e-05  (order 0.9750366974137371)  manuscript 0.375574  deviation +9.13e-05
+
+consistency A_fold - nu_f/lambda_fold = +4.12e-08
+done

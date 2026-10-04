@@ -1,0 +1,20 @@
+  single    f=0.1   A_max(mt)=0.135949 I=0.099760 T_act(mt)=0.693200 outbreak=50/50
+  single    f=0.25  A_max(mt)=0.320176 I=0.229582 T_act(mt)=0.693200 outbreak=50/50
+  single    f=0.5   A_max(mt)=0.585634 I=0.410795 T_act(mt)=0.693200 outbreak=50/50
+  single    f=0.75  A_max(mt)=0.809615 I=0.562582 T_act(mt)=0.693200 outbreak=50/50
+  T_Tperp   f=0.1   A_max(mt)=0.135946 I=0.099747 T_act(mt)=0.693200 outbreak=50/50
+  T_Tperp   f=0.25  A_max(mt)=0.320592 I=0.229827 T_act(mt)=0.693200 outbreak=50/50
+  T_Tperp   f=0.5   A_max(mt)=0.585687 I=0.410831 T_act(mt)=0.693200 outbreak=50/50
+  T_Tperp   f=0.75  A_max(mt)=0.809119 I=0.562254 T_act(mt)=0.693200 outbreak=50/50
+  Tperp_T   f=0.1   A_max(mt)=0.000000 I=0.000000 T_act(mt)=0.000000 outbreak=0/50
+  Tperp_T   f=0.25  A_max(mt)=0.000000 I=0.000000 T_act(mt)=0.000000 outbreak=0/50
+  Tperp_T   f=0.5   A_max(mt)=0.000000 I=0.000000 T_act(mt)=0.000000 outbreak=0/50
+  Tperp_T   f=0.75  A_max(mt)=0.000000 I=0.000000 T_act(mt)=0.000000 outbreak=0/50
+  ladder N=25000   A_max(mt)=0.3199576 I=0.2292976
+  ladder N=50000   A_max(mt)=0.3201816 I=0.2296075
+  ladder N=100000  A_max(mt)=0.3201760 I=0.2295818
+  ladder N=200000  A_max(mt)=0.3201331 I=0.2295054
+  grid dt=0.0004: A_max(mt)=0.3201396 T_act(mt)=0.6932000
+  grid dt=0.0002: A_max(mt)=0.3201646 T_act(mt)=0.6932000
+  grid dt=0.0001: A_max(mt)=0.3201760 T_act(mt)=0.6932000
+done

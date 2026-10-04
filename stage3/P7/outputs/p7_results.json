@@ -1,0 +1,1313 @@
+{
+  "verdicts": [
+    {
+      "name": "P7 A_max, single T pulse, f=0.1 (mean trajectory)",
+      "predicted": 0.1358,
+      "measured": 0.13594939999999997,
+      "diff": 0.00014939999999996623,
+      "ci_lo": -0.00016467000000000565,
+      "ci_hi": 0.0004458849999999792,
+      "delta": 0.002716,
+      "delta_basis": "2% of the registered 0.1358",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00030527749999999243,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 1.17e-07"
+    },
+    {
+      "name": "P7 T_act, single T pulse, f=0.1 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05"
+    },
+    {
+      "name": "P7 I, single T pulse, f=0.1",
+      "predicted": 0.09963,
+      "measured": 0.09975955142387564,
+      "diff": 0.00012955142387564844,
+      "ci_lo": -0.00012986554438453035,
+      "ci_hi": 0.00038896839213582723,
+      "delta": 0.0019925999999999998,
+      "delta_basis": "2% of the registered 0.09963",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00025941696826017543,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 4.0877966080155037e-07,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid"
+    },
+    {
+      "name": "P7 A_max, single T pulse, f=0.25 (mean trajectory)",
+      "predicted": 0.32038,
+      "measured": 0.32017599999999985,
+      "diff": -0.0002040000000001485,
+      "ci_lo": -0.0006842500000000529,
+      "ci_hi": 0.00024986000000004616,
+      "delta": 0.0064076,
+      "delta_basis": "2% of the registered 0.32038",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0004670550000000495,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.18e-07"
+    },
+    {
+      "name": "P7 T_act, single T pulse, f=0.25 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05"
+    },
+    {
+      "name": "P7 I, single T pulse, f=0.25",
+      "predicted": 0.22969,
+      "measured": 0.22958175330133737,
+      "diff": -0.00010824669866263403,
+      "ci_lo": -0.0004649255839375699,
+      "ci_hi": 0.0002484321866123018,
+      "delta": 0.0045938,
+      "delta_basis": "2% of the registered 0.22969",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0003566788852749384,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 8.626446225956652e-07,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid"
+    },
+    {
+      "name": "P7 A_max, single T pulse, f=0.5 (mean trajectory)",
+      "predicted": 0.58579,
+      "measured": 0.5856336,
+      "diff": -0.0001564000000000565,
+      "ci_lo": -0.0006174300000002519,
+      "ci_hi": 0.00028223000000016096,
+      "delta": 0.0117158,
+      "delta_basis": "2% of the registered 0.58579",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00044983000000020645,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.43e-07"
+    },
+    {
+      "name": "P7 T_act, single T pulse, f=0.5 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05"
+    },
+    {
+      "name": "P7 I, single T pulse, f=0.5",
+      "predicted": 0.41095,
+      "measured": 0.41079547468442484,
+      "diff": -0.00015452531557513804,
+      "ci_lo": -0.00048133745587014554,
+      "ci_hi": 0.00017228682471986945,
+      "delta": 0.008219,
+      "delta_basis": "2% of the registered 0.41095",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0003268121402949926,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 1.3805353168971912e-06,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid"
+    },
+    {
+      "name": "P7 A_max, single T pulse, f=0.75 (mean trajectory)",
+      "predicted": 0.80926,
+      "measured": 0.8096148000000001,
+      "diff": 0.0003548000000000995,
+      "ci_lo": 8.97999999998067e-05,
+      "ci_hi": 0.0006460350000001558,
+      "delta": 0.0161852,
+      "delta_basis": "2% of the registered 0.80926",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00027811750000017454,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 1.54e-07"
+    },
+    {
+      "name": "P7 T_act, single T pulse, f=0.75 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05"
+    },
+    {
+      "name": "P7 I, single T pulse, f=0.75",
+      "predicted": 0.56233,
+      "measured": 0.5625819443308749,
+      "diff": 0.0002519443308749425,
+      "ci_lo": 5.5329088280653416e-05,
+      "ci_hi": 0.0004485595734692316,
+      "delta": 0.0112466,
+      "delta_basis": "2% of the registered 0.56233",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00019661524259432286,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 1.7361062092380308e-06,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid"
+    },
+    {
+      "name": "P7 A_max, coincident (T, T_perp), f=0.1 (mean trajectory)",
+      "predicted": 0.1358,
+      "measured": 0.13594620000000002,
+      "diff": 0.00014620000000001299,
+      "ci_lo": -0.00024001499999998233,
+      "ci_hi": 0.0005490700000000126,
+      "delta": 0.002716,
+      "delta_basis": "2% of the registered 0.1358",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00039454249999999746,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 1.17e-07; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 T_act, coincident (T, T_perp), f=0.1 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 I, coincident (T, T_perp), f=0.1",
+      "predicted": 0.09963,
+      "measured": 0.09974720762296542,
+      "diff": 0.00011720762296542342,
+      "ci_lo": -0.00021912026686098096,
+      "ci_hi": 0.0004535355127918278,
+      "delta": 0.0019925999999999998,
+      "delta_basis": "2% of the registered 0.09963",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00033632788982640313,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 4.0877966080155037e-07,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 A_max, coincident (T, T_perp), f=0.25 (mean trajectory)",
+      "predicted": 0.32038,
+      "measured": 0.32059219999999994,
+      "diff": 0.00021219999999994021,
+      "ci_lo": -0.0003312050000001121,
+      "ci_hi": 0.0007526949999998589,
+      "delta": 0.0064076,
+      "delta_basis": "2% of the registered 0.32038",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0005419499999999855,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.18e-07; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 T_act, coincident (T, T_perp), f=0.25 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 I, coincident (T, T_perp), f=0.25",
+      "predicted": 0.22969,
+      "measured": 0.22982653878391066,
+      "diff": 0.00013653878391065022,
+      "ci_lo": -0.00026586173227000076,
+      "ci_hi": 0.0005389393000913012,
+      "delta": 0.0045938,
+      "delta_basis": "2% of the registered 0.22969",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0004024005161806418,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 8.626446225956652e-07,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 A_max, coincident (T, T_perp), f=0.5 (mean trajectory)",
+      "predicted": 0.58579,
+      "measured": 0.5856868,
+      "diff": -0.000103200000000081,
+      "ci_lo": -0.0005824049999998415,
+      "ci_hi": 0.00035604999999994114,
+      "delta": 0.0117158,
+      "delta_basis": "2% of the registered 0.58579",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00046922749999989133,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.43e-07; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 T_act, coincident (T, T_perp), f=0.5 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 I, coincident (T, T_perp), f=0.5",
+      "predicted": 0.41095,
+      "measured": 0.41083125648598967,
+      "diff": -0.00011874351401031102,
+      "ci_lo": -0.0004803043168263299,
+      "ci_hi": 0.00024281728880570785,
+      "delta": 0.008219,
+      "delta_basis": "2% of the registered 0.41095",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0003615608028160076,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 1.3805353168971912e-06,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 A_max, coincident (T, T_perp), f=0.75 (mean trajectory)",
+      "predicted": 0.80926,
+      "measured": 0.8091191999999997,
+      "diff": -0.00014080000000027404,
+      "ci_lo": -0.0004464100000000082,
+      "ci_hi": 0.0001710249999998803,
+      "delta": 0.0161852,
+      "delta_basis": "2% of the registered 0.80926",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00030871749999994424,
+      "finite_N_bias": 8.447391304361451e-05,
+      "numerical_error": 1.1399999999883725e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 1.54e-07; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 T_act, coincident (T, T_perp), f=0.75 (mean trajectory)",
+      "predicted": 0.69315,
+      "measured": 0.6932,
+      "diff": 4.999999999999449e-05,
+      "ci_lo": 4.999999999999449e-05,
+      "ci_hi": 4.999999999999449e-05,
+      "delta": 0.013863,
+      "delta_basis": "2% of the registered 0.69315",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 2.220446049250313e-16,
+      "numerical_error": 5.281944005475214e-05,
+      "closure_error": null,
+      "interval_kind": "bootstrap percentile over replicate traces, B=2000",
+      "note": "registered endpoint is the mean-trajectory value (ruling 2); C9(a) enclosure width 2.00e-06; the bootstrap interval has ZERO width because every cohort member shuts off in the 2e-6 window [L, L+] in every replicate, so T_act has no replicate-to-replicate variation -- the whole discrepancy is grid quantization 5.28e-05; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 I, coincident (T, T_perp), f=0.75",
+      "predicted": 0.56233,
+      "measured": 0.5622536931848113,
+      "diff": -7.630681518866478e-05,
+      "ci_lo": -0.00030152838374775115,
+      "ci_hi": 0.0001489147533704216,
+      "delta": 0.0112466,
+      "delta_basis": "2% of the registered 0.56233",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.00022522156855904547,
+      "finite_N_bias": 0.00012196071762904381,
+      "numerical_error": 1.7361062092380308e-06,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "reported once (ruling 2: I is linear in A, so the mean-trajectory and per-replicate-average values coincide identically); int A dt is accumulated exactly by the engine, not from the sampling grid; design A4: (T, T_perp) reproduces the single-pulse values (specification: T accepted -> c = 1, then T_perp is in the SAME framing class, rejected, depositing +0.4r, clipped back to 1)"
+    },
+    {
+      "name": "P7 A_max, coincident (T_perp, T), f=0.1",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 T_act, coincident (T_perp, T), f=0.1",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 I, coincident (T_perp, T), f=0.1",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "exact int A dt from the engine"
+    },
+    {
+      "name": "P7 A_max, coincident (T_perp, T), f=0.25",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 T_act, coincident (T_perp, T), f=0.25",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 I, coincident (T_perp, T), f=0.25",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "exact int A dt from the engine"
+    },
+    {
+      "name": "P7 A_max, coincident (T_perp, T), f=0.5",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 T_act, coincident (T_perp, T), f=0.5",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 I, coincident (T_perp, T), f=0.5",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "exact int A dt from the engine"
+    },
+    {
+      "name": "P7 A_max, coincident (T_perp, T), f=0.75",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 T_act, coincident (T_perp, T), f=0.75",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "specification: T_perp rejected first (deposit +beta = +0.4), then T accepted in the same framing class (deposit +alpha r = +1e-6), so c = 0.400001 < c_b = 0.5 and no cohort member ever activates"
+    },
+    {
+      "name": "P7 I, coincident (T_perp, T), f=0.75",
+      "predicted": 0.0,
+      "measured": 0.0,
+      "diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "delta": 0.001,
+      "delta_basis": "A4a absolute tolerance 1e-3 for zero predictions",
+      "status": "PASS",
+      "n_replicates": 50,
+      "N": 100000,
+      "replicates_needed": null,
+      "mc_error": 0.0,
+      "finite_N_bias": 0.0,
+      "numerical_error": 0.0,
+      "closure_error": null,
+      "interval_kind": "student-t across replicates",
+      "note": "exact int A dt from the engine"
+    }
+  ],
+  "finite_N_bias": {
+    "A_max": {
+      "ladder": [
+        [
+          25000,
+          0.31995759999999995
+        ],
+        [
+          50000,
+          0.3201816
+        ],
+        [
+          100000,
+          0.32017599999999985
+        ],
+        [
+          200000,
+          0.32013309999999995
+        ]
+      ],
+      "top_gap": 4.289999999990135e-05,
+      "extrapolated_Ninf": 0.32021757391304356,
+      "slope_per_inverse_N": -5.626608695651772,
+      "residual_bias_at_Nmax": 8.447391304361451e-05
+    },
+    "I": {
+      "ladder": [
+        [
+          25000,
+          0.22929756290536457
+        ],
+        [
+          50000,
+          0.22960753825494806
+        ],
+        [
+          100000,
+          0.22958175330133737
+        ],
+        [
+          200000,
+          0.22950543786071484
+        ]
+      ],
+      "top_gap": 7.631544062253193e-05,
+      "extrapolated_Ninf": 0.22962739857834388,
+      "slope_per_inverse_N": -6.897359880138788,
+      "residual_bias_at_Nmax": 0.00012196071762904381
+    },
+    "T_act": {
+      "ladder": [
+        [
+          25000,
+          0.6932
+        ],
+        [
+          50000,
+          0.6932
+        ],
+        [
+          100000,
+          0.6932
+        ],
+        [
+          200000,
+          0.6932
+        ]
+      ],
+      "top_gap": 0.0,
+      "extrapolated_Ninf": 0.6932000000000003,
+      "slope_per_inverse_N": -2.275358643141221e-12,
+      "residual_bias_at_Nmax": 2.220446049250313e-16
+    }
+  },
+  "grid_refinement": {
+    "A_max": [
+      [
+        0.0004,
+        0.32013959999999997
+      ],
+      [
+        0.0002,
+        0.32016459999999997
+      ],
+      [
+        0.0001,
+        0.32017599999999985
+      ]
+    ],
+    "T_act": [
+      [
+        0.0004,
+        0.6932
+      ],
+      [
+        0.0002,
+        0.6932
+      ],
+      [
+        0.0001,
+        0.6932
+      ]
+    ],
+    "residual_A_max": 1.1399999999883725e-05,
+    "residual_T_act": 5.281944005475214e-05
+  },
+  "finite_N_diagnostics": [
+    {
+      "order": "single",
+      "f": 0.1,
+      "A_max_mean_trajectory": 0.13594939999999997,
+      "A_max_per_replicate_mean": 0.1359494,
+      "A_max_per_replicate_sd": 0.001129755996773153,
+      "A_max_gap": 2.7755575615628914e-17,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 0.00014961174241812905
+    },
+    {
+      "order": "single",
+      "f": 0.25,
+      "A_max_mean_trajectory": 0.32017599999999985,
+      "A_max_per_replicate_mean": 0.320176,
+      "A_max_per_replicate_sd": 0.001694212236421641,
+      "A_max_gap": 1.6653345369377348e-16,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 8.381222939355822e-05
+    },
+    {
+      "order": "single",
+      "f": 0.5,
+      "A_max_mean_trajectory": 0.5856336,
+      "A_max_per_replicate_mean": 0.5856336,
+      "A_max_per_replicate_sd": 0.00166131833561329,
+      "A_max_gap": 0.0,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 5.802884574739333e-05
+    },
+    {
+      "order": "single",
+      "f": 0.75,
+      "A_max_mean_trajectory": 0.8096148000000001,
+      "A_max_per_replicate_mean": 0.8096148,
+      "A_max_per_replicate_sd": 0.0010067065721693549,
+      "A_max_gap": -1.1102230246251565e-16,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 0.00011780301787479154
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.1,
+      "A_max_mean_trajectory": 0.13594620000000002,
+      "A_max_per_replicate_mean": 0.13594620000000002,
+      "A_max_per_replicate_sd": 0.0014857869350369628,
+      "A_max_gap": 0.0,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 0.00014982983545289074
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.25,
+      "A_max_mean_trajectory": 0.32059219999999994,
+      "A_max_per_replicate_mean": 0.32059220000000005,
+      "A_max_per_replicate_sd": 0.0019829572741288247,
+      "A_max_gap": 1.1102230246251565e-16,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 6.262945776223017e-05
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.5,
+      "A_max_mean_trajectory": 0.5856868,
+      "A_max_per_replicate_mean": 0.5856868000000001,
+      "A_max_per_replicate_sd": 0.0017414917836880695,
+      "A_max_gap": 1.1102230246251565e-16,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 6.6270934312811e-05
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.75,
+      "A_max_mean_trajectory": 0.8091191999999997,
+      "A_max_per_replicate_mean": 0.8091191999999999,
+      "A_max_per_replicate_sd": 0.0011576186676068405,
+      "A_max_gap": 2.220446049250313e-16,
+      "T_act_mean_trajectory": 0.6932,
+      "T_act_per_replicate_mean": 0.6931999999999999,
+      "T_act_per_replicate_sd": 1.1214946133455537e-16,
+      "t_argmax_mean_trajectory": 0.6931,
+      "t_argmax_per_replicate_sd": 0.0001202208851426796
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.1,
+      "A_max_mean_trajectory": 0.0,
+      "A_max_per_replicate_mean": 0.0,
+      "A_max_per_replicate_sd": 0.0,
+      "A_max_gap": 0.0,
+      "T_act_mean_trajectory": 0.0,
+      "T_act_per_replicate_mean": 0.0,
+      "T_act_per_replicate_sd": 0.0,
+      "t_argmax_mean_trajectory": 0.0,
+      "t_argmax_per_replicate_sd": 0.0
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.25,
+      "A_max_mean_trajectory": 0.0,
+      "A_max_per_replicate_mean": 0.0,
+      "A_max_per_replicate_sd": 0.0,
+      "A_max_gap": 0.0,
+      "T_act_mean_trajectory": 0.0,
+      "T_act_per_replicate_mean": 0.0,
+      "T_act_per_replicate_sd": 0.0,
+      "t_argmax_mean_trajectory": 0.0,
+      "t_argmax_per_replicate_sd": 0.0
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.5,
+      "A_max_mean_trajectory": 0.0,
+      "A_max_per_replicate_mean": 0.0,
+      "A_max_per_replicate_sd": 0.0,
+      "A_max_gap": 0.0,
+      "T_act_mean_trajectory": 0.0,
+      "T_act_per_replicate_mean": 0.0,
+      "T_act_per_replicate_sd": 0.0,
+      "t_argmax_mean_trajectory": 0.0,
+      "t_argmax_per_replicate_sd": 0.0
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.75,
+      "A_max_mean_trajectory": 0.0,
+      "A_max_per_replicate_mean": 0.0,
+      "A_max_per_replicate_sd": 0.0,
+      "A_max_gap": 0.0,
+      "T_act_mean_trajectory": 0.0,
+      "T_act_per_replicate_mean": 0.0,
+      "T_act_per_replicate_sd": 0.0,
+      "t_argmax_mean_trajectory": 0.0,
+      "t_argmax_per_replicate_sd": 0.0
+    }
+  ],
+  "outbreak_new_rule": [
+    {
+      "order": "single",
+      "f": 0.1,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.0439124
+    },
+    {
+      "order": "single",
+      "f": 0.25,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.08128960000000002
+    },
+    {
+      "order": "single",
+      "f": 0.5,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.0926358
+    },
+    {
+      "order": "single",
+      "f": 0.75,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.061365399999999994
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.1,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.04394259999999999
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.25,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.0813624
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.5,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.09278560000000001
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.75,
+      "k": 50,
+      "n": 50,
+      "p": 1.0,
+      "ever_active_outside_cohort_mean": 0.061396200000000005
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.1,
+      "k": 0,
+      "n": 50,
+      "p": 0.0,
+      "ever_active_outside_cohort_mean": 0.0
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.25,
+      "k": 0,
+      "n": 50,
+      "p": 0.0,
+      "ever_active_outside_cohort_mean": 0.0
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.5,
+      "k": 0,
+      "n": 50,
+      "p": 0.0,
+      "ever_active_outside_cohort_mean": 0.0
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.75,
+      "k": 0,
+      "n": 50,
+      "p": 0.0,
+      "ever_active_outside_cohort_mean": 0.0
+    }
+  ],
+  "late_recross_check": {
+    "max_ratio_over_all_cells": 0.27431765389082463,
+    "threshold": 0.5,
+    "meaning": "max over every replicate of max(A after the first descent below A_max/2) / A_max; must stay below 0.5 for T_act to be the single interval [0, L)"
+  },
+  "reference": {
+    "B": 1.000001000001e-06,
+    "L": 0.6931471805599453,
+    "L_plus": 0.6931491805639453,
+    "L_plus_minus_L": 2.0000039999690244e-06,
+    "params": {
+      "alpha": 1.0,
+      "beta": 0.4,
+      "r": 1e-06,
+      "lam": 0.5,
+      "eps": 1.0,
+      "c_b": 0.5
+    },
+    "f0.25_enclosures": {
+      "A_max": [
+        0.32037724101704074,
+        0.3203774587531798
+      ],
+      "I": [
+        0.2296892229952369,
+        0.2296900856398595
+      ],
+      "T_act": [
+        0.6931471805599453,
+        0.6931491805639453
+      ]
+    },
+    "check_f0.25": {
+      "A_max": {
+        "computed": [
+          0.32037724101704074,
+          0.3203774587531798
+        ],
+        "appendix": [
+          0.32037724,
+          0.32037746
+        ],
+        "d_lo": 1.0170407294118888e-09,
+        "d_hi": -1.2468202026383324e-09
+      },
+      "I": {
+        "computed": [
+          0.2296892229952369,
+          0.2296900856398595
+        ],
+        "appendix": [
+          0.22968922,
+          0.22969009
+        ],
+        "d_lo": 2.99523689184511e-09,
+        "d_hi": -4.3601405264048765e-09
+      },
+      "T_act": {
+        "computed": [
+          0.6931471805599453,
+          0.6931491805639453
+        ],
+        "appendix": [
+          0.69314718,
+          0.69314919
+        ],
+        "d_lo": 5.599453123394937e-10,
+        "d_hi": -9.436054715372677e-09
+      }
+    },
+    "reach_table": [
+      {
+        "f": 0.1,
+        "enclosure": {
+          "A_max": [
+            0.13579648178933992,
+            0.13579659914541475
+          ],
+          "I": [
+            0.09962942504814498,
+            0.09962983382780578
+          ],
+          "T_act": [
+            0.6931471805599453,
+            0.6931491805639453
+          ]
+        },
+        "midpoint": {
+          "A_max": 0.13579654046737732,
+          "I": 0.09962962943797538,
+          "T_act": 0.6931481805619453
+        },
+        "registered": {
+          "A_max": 0.1358,
+          "I": 0.09963,
+          "T_act": 0.69315
+        },
+        "d": {
+          "A_max": -3.4595326226793954e-06,
+          "I": -3.705620246208241e-07,
+          "T_act": -1.819438054773137e-06
+        },
+        "width": {
+          "A_max": 1.1735607483021049e-07,
+          "I": 4.0877966080155037e-07,
+          "T_act": 2.0000039999690244e-06
+        }
+      },
+      {
+        "f": 0.25,
+        "enclosure": {
+          "A_max": [
+            0.32037724101704074,
+            0.3203774587531798
+          ],
+          "I": [
+            0.2296892229952369,
+            0.2296900856398595
+          ],
+          "T_act": [
+            0.6931471805599453,
+            0.6931491805639453
+          ]
+        },
+        "midpoint": {
+          "A_max": 0.32037734988511024,
+          "I": 0.22968965431754818,
+          "T_act": 0.6931481805619453
+        },
+        "registered": {
+          "A_max": 0.32038,
+          "I": 0.22969,
+          "T_act": 0.69315
+        },
+        "d": {
+          "A_max": -2.6501148897573046e-06,
+          "I": -3.4568245182997615e-07,
+          "T_act": -1.819438054773137e-06
+        },
+        "width": {
+          "A_max": 2.177361390631738e-07,
+          "I": 8.626446225956652e-07,
+          "T_act": 2.0000039999690244e-06
+        }
+      },
+      {
+        "f": 0.5,
+        "enclosure": {
+          "A_max": [
+            0.585786437626905,
+            0.5857866802680566
+          ],
+          "I": [
+            0.41094535765679574,
+            0.41094673819211264
+          ],
+          "T_act": [
+            0.6931471805599453,
+            0.6931491805639453
+          ]
+        },
+        "midpoint": {
+          "A_max": 0.5857865589474808,
+          "I": 0.4109460479244542,
+          "T_act": 0.6931481805619453
+        },
+        "registered": {
+          "A_max": 0.58579,
+          "I": 0.41095,
+          "T_act": 0.69315
+        },
+        "d": {
+          "A_max": -3.4410525192596353e-06,
+          "I": -3.952075545765599e-06,
+          "T_act": -1.819438054773137e-06
+        },
+        "width": {
+          "A_max": 2.426411516154303e-07,
+          "I": 1.3805353168971912e-06,
+          "T_act": 2.0000039999690244e-06
+        }
+      },
+      {
+        "f": 0.75,
+        "enclosure": {
+          "A_max": [
+            0.8092564301694538,
+            0.8092565845301752
+          ],
+          "I": [
+            0.5623324891021355,
+            0.5623342252083448
+          ],
+          "T_act": [
+            0.6931471805599453,
+            0.6931491805639453
+          ]
+        },
+        "midpoint": {
+          "A_max": 0.8092565073498146,
+          "I": 0.5623333571552401,
+          "T_act": 0.6931481805619453
+        },
+        "registered": {
+          "A_max": 0.80926,
+          "I": 0.56233,
+          "T_act": 0.69315
+        },
+        "d": {
+          "A_max": -3.4926501853993486e-06,
+          "I": 3.3571552401356897e-06,
+          "T_act": -1.819438054773137e-06
+        },
+        "width": {
+          "A_max": 1.5436072142716029e-07,
+          "I": 1.7361062092380308e-06,
+          "T_act": 2.0000039999690244e-06
+        }
+      }
+    ],
+    "two_pulse": {
+      "T_then_Tperp": 1.0,
+      "Tperp_then_T": 0.400001,
+      "T_then_Tperp_active": true,
+      "Tperp_then_T_active": false
+    }
+  }
+}

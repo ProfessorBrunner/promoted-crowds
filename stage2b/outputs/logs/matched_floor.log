@@ -1,0 +1,7 @@
+  [P6A] c_min=1e-02  h_actual=0.009989523  J=461  t_cross=70.229519  Lambda=165.785640
+  [P6A] c_min=1e-04  h_actual=0.009989523  J=922  t_cross=70.229656  Lambda=165.785965
+  [P6A] MATCHED-h floor effect 1e-2 -> 1e-4: t_cross +1.371e-04  Lambda +3.251e-04
+  [P6B] c_min=1e-02  h_actual=0.002500092  J=1842  t_cross=12.893164  Lambda=25.374649
+  [P6B] c_min=1e-04  h_actual=0.002500092  J=3684  t_cross=12.893233  Lambda=25.374772
+  [P6B] MATCHED-h floor effect 1e-2 -> 1e-4: t_cross +6.886e-05  Lambda +1.225e-04
+wrote /Users/rb/Desktop/Crowd1/stage2b/outputs/raw/floor_audit.json

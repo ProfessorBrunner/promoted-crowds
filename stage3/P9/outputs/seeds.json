@@ -1,0 +1,43 @@
+{
+  "master_seed": 20261005,
+  "note": "distinct from 20261001 (Stage 1), 20261002 (Stage 2/2B), 20261003 (P5), 20261004 (P7), 20261006 (P8)",
+  "derivation": "crowd1.rng.derive_run_seed(MASTER_SEED, 9, int(lam*100), N, rep)",
+  "perturbation_resume_seed": "derive_run_seed(run_seed, 99, int(sign), int(camp_plus))",
+  "perturbation_pick_rng": "numpy default_rng(run_seed XOR 0x9E3779B9)",
+  "cells": [
+    {
+      "lam": 1.5,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "lam": 2.0,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "lam": 3.0,
+      "N": 100000,
+      "replicates": 50
+    }
+  ],
+  "N_ladder": [
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "ladder_lambda": 2.0,
+  "burn_in": 50.0,
+  "window": [
+    50.0,
+    100.0
+  ],
+  "c_b": 0.3,
+  "c_b_source": "owner 2026-10-02, after both readings were computed and reported",
+  "per_run_seeds_in": "outputs/raw/p9_raw.json (cells[].seeds)",
+  "deterministic_no_rng": [
+    "p9_reference.py",
+    "solve_p9.py"
+  ]
+}

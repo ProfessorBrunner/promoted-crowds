@@ -1,0 +1,13 @@
+{
+  "kinetic_t_dagger": 70.30333287794207,
+  "kinetic_h": 0.0024996952111361955,
+  "kinetic_slabs": 436,
+  "crossing_level": 0.5603,
+  "adiabatic": 66.3,
+  "registered_t_dagger": 70.3,
+  "registered_t_dagger_err": 0.1,
+  "agent_t_dagger_mean": 70.35303633651682,
+  "agent_t_dagger_sd": 0.08533231254436888,
+  "replicates": 50,
+  "N": 100000
+}

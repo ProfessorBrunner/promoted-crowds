@@ -1,0 +1,5 @@
+  h=0.0005 lambda_fold=1.482947544  nu_f=0.557120165  A_fold=0.375684337  (23 evals)
+lam_fold: Richardson 1.482545582 +- 4.02e-04 (order 1.0017)  manuscript 1.48251  deviation +3.56e-05 = 0.09 x the numerical error
+nu_f: Richardson 0.556941032 +- 1.79e-04 (order 1.0018)  manuscript 0.556791  deviation +1.50e-04 = 0.84 x the numerical error
+A_fold: Richardson 0.375665378 +- 1.90e-05 (order 1.0013)  manuscript 0.375574  deviation +9.14e-05 = 4.82 x the numerical error
+consistency A_fold - nu_f/lam_fold = +1.03e-08

@@ -1,0 +1,109 @@
+{
+  "master_seed": 20261004,
+  "note": "distinct from Stage 1 (20261001), Stage 2 / 2B (20261002), Stage 3 P5 (20261003)",
+  "derivation": "crowd1.rng.derive_run_seed(MASTER_SEED, 7, int(f*1000), N, rep, order_code)",
+  "order_code": {
+    "single": 0,
+    "T_Tperp": 1,
+    "Tperp_T": 2
+  },
+  "streams_per_run": {
+    "0": "clocks",
+    "1": "recipient",
+    "2": "acceptance coins",
+    "3": "cohort",
+    "4": "initial law",
+    "5": "exogenous"
+  },
+  "cells": [
+    {
+      "order": "single",
+      "f": 0.1,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "single",
+      "f": 0.25,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "single",
+      "f": 0.5,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "single",
+      "f": 0.75,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.1,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.25,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.5,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "T_Tperp",
+      "f": 0.75,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.1,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.25,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.5,
+      "N": 100000,
+      "replicates": 50
+    },
+    {
+      "order": "Tperp_T",
+      "f": 0.75,
+      "N": 100000,
+      "replicates": 50
+    }
+  ],
+  "N_ladder": [
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fine_dt_ladder": [
+    0.0004,
+    0.0002,
+    0.0001
+  ],
+  "ladder_reach": 0.25,
+  "bootstrap_seed": "MASTER_SEED + int(f*1000) + N, numpy default_rng, B = 2000",
+  "per_run_seeds_in": "outputs/raw/p7_raw.json (cells[].seeds)",
+  "deterministic_no_rng": [
+    "p7_reference.py"
+  ]
+}

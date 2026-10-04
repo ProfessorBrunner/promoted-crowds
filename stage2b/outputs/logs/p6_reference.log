@@ -1,0 +1,16 @@
+(a) P6 case A kinetic validation: t_dagger at A_f = 0.5603
+  [A] h=0.010005 t_cross=70.22825 Lambda=165.78089 leak=6.8e-59 massdef=9.2e-05
+  [A] h=0.005003 t_cross=70.27898 Lambda=166.62703 leak=4.3e-58 massdef=1.2e-05
+  [A] h=0.002500 t_cross=70.30333 Lambda=167.03806 leak=1.5e-57 massdef=1.5e-06
+(b) P6 case B kinetic reference: t* at A = 0.325
+  [B] h=0.009990 t_cross=12.85621 Lambda=25.21107 leak=1.0e-93 massdef=9.0e-06
+  [B] h=0.005000 t_cross=12.88088 Lambda=25.32046 leak=4.2e-93 massdef=1.2e-06
+  [B] h=0.002500 t_cross=12.89316 Lambda=25.37465 leak=1.2e-92 massdef=1.5e-07
+  [B] h=0.001250 t_cross=12.89928 Lambda=25.40161 leak=2.8e-92 massdef=1.8e-08
+  [B] h=0.000625 t_cross=12.90234 Lambda=25.41505 leak=6.1e-92 massdef=2.3e-09
+(c) P6 case B agent re-run with traces saved
+  [B agents] level=0.4: mean-of-crossings 12.581263762426488, mean-trajectory 12.581129362314032
+  [B agents] level=0.35: mean-of-crossings 12.801037812860912, mean-trajectory 12.801098964803314
+  [B agents] level=0.325: mean-of-crossings 12.90419095848989, mean-trajectory 12.904440781615785
+  [B agents] level=0.3: mean-of-crossings 13.003855493793203, mean-trajectory 13.00392571734206
+done

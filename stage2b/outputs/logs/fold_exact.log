@@ -1,0 +1,12 @@
+  nu=1e-05  quadrature 5.1083254364e-06  C2.16 series 5.1083254372e-06  rel -1.6e-10
+  nu=1e-04  quadrature 5.1089481453e-05  C2.16 series 5.1089482333e-05  rel -1.7e-08
+  nu=1e-03  quadrature 5.1151673996e-04  C2.16 series 5.1151761939e-04  rel -1.7e-06
+  nodes=100   nu_f=0.556791435  lam_fold=1.482508321  A_fold=0.375573902
+  nodes=200   nu_f=0.556791433  lam_fold=1.482508330  A_fold=0.375573898
+  nodes=400   nu_f=0.556791421  lam_fold=1.482508331  A_fold=0.375573890
+  nodes=800   nu_f=0.556791424  lam_fold=1.482508331  A_fold=0.375573892
+  nodes=1600  nu_f=0.556791422  lam_fold=1.482508331  A_fold=0.375573891
+lam_fold: exact 1.482508331  manuscript 1.48251  deviation -1.67e-06
+nu_f: exact 0.556791422  manuscript 0.556791  deviation +4.22e-07
+A_fold: exact 0.375573891  manuscript 0.375574  deviation -1.09e-07
+identity A_fold - nu_f/lam_fold = -5.55e-17

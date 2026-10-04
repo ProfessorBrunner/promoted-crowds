@@ -1,0 +1,107 @@
+[
+  {
+    "prediction": "P1",
+    "order": "(40, 140, 50)",
+    "outbreaks": 440,
+    "replicates": 958,
+    "target": 0.03,
+    "pilot_outbreaks": 17,
+    "pilot_p_hat": 0.34,
+    "pilot_candidates": [
+      17,
+      33
+    ],
+    "var_from_pilot": 0.2244,
+    "p_hat_final": 0.4592901878914405,
+    "var_realized": 0.2483427111980858,
+    "wilson_half_width": 0.031494001303067246,
+    "meets_target": false,
+    "n_needed_at_realized_p": 1061,
+    "shortfall": 103,
+    "hit_cap": false
+  },
+  {
+    "prediction": "P1",
+    "order": "(40, 50, 140)",
+    "outbreaks": 345,
+    "replicates": 1006,
+    "target": 0.03,
+    "pilot_outbreaks": 19,
+    "pilot_p_hat": 0.38,
+    "pilot_candidates": [
+      19,
+      31
+    ],
+    "var_from_pilot": 0.2356,
+    "p_hat_final": 0.3429423459244533,
+    "var_realized": 0.2253328932962859,
+    "wilson_half_width": 0.029283581794157527,
+    "meets_target": true,
+    "n_needed_at_realized_p": 962,
+    "shortfall": -44,
+    "hit_cap": false
+  },
+  {
+    "prediction": "P1",
+    "order": "(40, 140, 50)",
+    "outbreaks": 275,
+    "replicates": 315,
+    "target": 0.03,
+    "pilot_outbreaks": 46,
+    "pilot_p_hat": 0.92,
+    "pilot_candidates": [
+      4,
+      46
+    ],
+    "var_from_pilot": 0.07359999999999997,
+    "p_hat_final": 0.873015873015873,
+    "var_realized": 0.11085915847820609,
+    "wilson_half_width": 0.03682184710665001,
+    "meets_target": false,
+    "n_needed_at_realized_p": 474,
+    "shortfall": 159,
+    "hit_cap": false
+  },
+  {
+    "prediction": "P1",
+    "order": "(140, 40, 50) (held out)",
+    "outbreaks": 504,
+    "replicates": 1052,
+    "target": 0.03,
+    "pilot_outbreaks": 22,
+    "pilot_p_hat": 0.44,
+    "pilot_candidates": [
+      22,
+      28
+    ],
+    "var_from_pilot": 0.24640000000000004,
+    "p_hat_final": 0.4790874524714829,
+    "var_realized": 0.24956266535586752,
+    "wilson_half_width": 0.03013283042786718,
+    "meets_target": false,
+    "n_needed_at_realized_p": 1066,
+    "shortfall": 14,
+    "hit_cap": false
+  },
+  {
+    "prediction": "P2",
+    "order": "(10, 30, 20)",
+    "outbreaks": 75,
+    "replicates": 1157,
+    "target": 0.02,
+    "pilot_outbreaks": 7,
+    "pilot_p_hat": 0.14,
+    "pilot_candidates": [
+      7,
+      43
+    ],
+    "var_from_pilot": 0.12040000000000001,
+    "p_hat_final": 0.06482281763180639,
+    "var_realized": 0.06062081994607996,
+    "wilson_half_width": 0.014236586406338727,
+    "meets_target": true,
+    "n_needed_at_realized_p": 583,
+    "shortfall": -574,
+    "hit_cap": false
+  }
+]

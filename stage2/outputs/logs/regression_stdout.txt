@@ -1,0 +1,2 @@
+rows compared: 124 / 124 in the Stage 1 archive
+MISMATCHES: 0

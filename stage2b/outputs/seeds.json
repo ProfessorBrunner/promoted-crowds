@@ -1,0 +1,20 @@
+{
+  "master_seed": 20261002,
+  "inherited_from": "stage2 (so post-campaign state preparation reproduces the Stage 2 backgrounds exactly)",
+  "task1": {
+    "state_prep": "derive_run_seed(MASTER_SEED, 1, hash(order)%10007, N, rep), identical to stage2 p1_operator_worker",
+    "operator": "derive_run_seed(prep_seed, 31, int(tau0*10))",
+    "backgrounds": 24,
+    "trials_per_background": 10000,
+    "N": 100000,
+    "lam": 2.0
+  },
+  "task2": {
+    "deterministic": true,
+    "note": "kinetic solver has no RNG; no seeds"
+  },
+  "task3": {
+    "kinetic": "deterministic, no RNG",
+    "agents": "stage2 p6_worker(cfg_path,'B',rep), rep=0..49, seeds derived inside as in Stage 2"
+  }
+}

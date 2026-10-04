@@ -1,0 +1,7 @@
+case,passed,seed,test
+H1_decay_deadline_refresh,True,9244473560509972245,T3b
+H2_clipping_and_rejection_ray,True,6336470529969813927,T3b
+H3_class_identifiers,True,14491533173998366983,T3b
+H4_stance_exact_tie_plus,True,1406888384975862426,T3b
+H4_stance_exact_tie_minus,True,8351260733713819666,T3b
+H5_no_clock_event_between_coincident_pulses,True,6185244392246368479,T3b

@@ -1,0 +1,6 @@
+  lam=1.9 T=120 h=0.004 c_min=1e-03  f_c = 0.00814166 (+-4.3e-07, 15 evals)
+  lam=1.9 T=120 h=0.004 c_min=1e-04  f_c = 0.00813055 (+-4.3e-07, 15 evals)
+  lam=1.9 T=120 h=0.004 c_min=1e-05  f_c = 0.00812970 (+-4.3e-07, 15 evals)
+  reproduces the original probe rows: True
+  T=120 vs T=240 at h=0.004: c_min=1e-03 diff +0.0e+00, c_min=1e-05 diff +0.0e+00
+wrote /Users/rb/Desktop/Crowd1/stage2b/outputs/raw/floor_audit.json

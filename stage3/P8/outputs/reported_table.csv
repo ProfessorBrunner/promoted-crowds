@@ -1,0 +1,5 @@
+N,replicates,n_extinct,n_censored,fraction_extinct,median_extinction_time,km_survival_at_T_max,mean_A_over_run,A_star,depression_below_A_star,status
+100,100,0,100,0.0,median > T_max = 2000,1.0,0.47673325750614437,0.5,0.02326674249385563,REPORTED (no registered number; no verdict)
+200,100,0,100,0.0,median > T_max = 2000,1.0,0.4938781926269027,0.5,0.00612180737309731,REPORTED (no registered number; no verdict)
+400,100,0,100,0.0,median > T_max = 2000,1.0,0.4971518538952223,0.5,0.0028481461047776824,REPORTED (no registered number; no verdict)
+800,100,0,100,0.0,median > T_max = 2000,1.0,0.4986421676236127,0.5,0.0013578323763873135,REPORTED (no registered number; no verdict)

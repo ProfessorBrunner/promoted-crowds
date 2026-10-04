@@ -1,0 +1,9 @@
+  N=25000   t*=12.90389 Lambda*=25.42212 (rect 25.46271)
+  N=50000   t*=12.89944 Lambda*=25.41926 (rect 25.45925)
+  N=100000  t*=12.90664 Lambda*=25.42997 (rect 25.47060)
+  N=200000  t*=12.90569 Lambda*=25.42812 (rect 25.46951)
+  dt=0.1    Lambda*_trap=25.43970 Lambda*_rect=25.65179
+  dt=0.05   Lambda*_trap=25.43373 Lambda*_rect=25.53795
+  dt=0.02   Lambda*_trap=25.42997 Lambda*_rect=25.47060
+  dt=0.01   Lambda*_trap=25.43130 Lambda*_rect=25.45147
+done

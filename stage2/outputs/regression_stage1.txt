@@ -1,0 +1,5 @@
+Stage 1 suite re-run against the Stage 2 engine
+rows compared: 124 / 124
+mismatches: 0
+
+Every Stage 1 certified row reproduces bit-for-bit under the Stage 2 engine: same verdict, same predicted/measured/diff/interval/delta/MC error/numerical error.

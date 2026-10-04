@@ -1,0 +1,28 @@
+exact nu_f = 0.556791421   exact A_fold = P_nu(nu_f) = 0.375573890350
+
+check A - solver P_nu at fixed nu = nu_f, floor lowered to c_min = 1e-5
+  h=0.008001  P_nu = 0.373939413   error vs exact = -1.634e-03
+  h=0.004000  P_nu = 0.374758712   error vs exact = -8.152e-04
+  h=0.002000  P_nu = 0.375166671   error vs exact = -4.072e-04
+  h=0.001000  P_nu = 0.375370379   error vs exact = -2.035e-04
+  h=0.000500  P_nu = 0.375472154   error vs exact = -1.017e-04
+  first differences: +8.193e-04, +4.080e-04, +2.037e-04, +1.018e-04
+  ratios: 2.008, 2.003, 2.002
+  Richardson (order 1) = 0.375573929   error vs exact = +3.883e-08
+
+check B - fold at a single grid h = 0.002, floor 1e-3 vs 1e-5
+  c_min=1e-03  nu_f = 0.557657171  lam_fold = 1.484154365  A_fold = 0.375740681
+  c_min=1e-05  nu_f = 0.557509173  lam_fold = 1.484117109  A_fold = 0.375650392
+  shift from lowering the floor: nu_f -1.480e-04, lam_fold -3.726e-05, A_fold -9.029e-05
+  superseded extrapolation minus exact: nu_f +1.496e-04, lam_fold +3.725e-05, A_fold +9.149e-05
+
+check C - truncation order K at fixed nu, h = 0.001
+  c_min=1e-03 K=3   P_nu = 0.375360861
+  c_min=1e-03 K=6   P_nu = 0.375360861
+  c_min=1e-03 K=10  P_nu = 0.375360861
+  c_min=1e-05 K=3   P_nu = 0.375370379
+  c_min=1e-05 K=6   P_nu = 0.375370379
+  c_min=1e-05 K=10  P_nu = 0.375370379
+  spread over K at fixed floor: c_min=1e-03 -> 9.4e-11, c_min=1e-05 -> 9.4e-11
+
+wrote outputs/raw/fold_solver_crosscheck.json
