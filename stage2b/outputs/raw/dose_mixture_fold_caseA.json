@@ -1,0 +1,77 @@
+{
+  "case": "P6 case A, dose-mixture fold (C7(c))",
+  "parameters": {
+    "alpha": 2.0,
+    "beta": 0.0,
+    "r": 0.99,
+    "lam": 3.0,
+    "eps": 1.0,
+    "c_b": 0.5,
+    "rho": 0.0,
+    "kappa": 0.0,
+    "f": 1.0,
+    "initial": "I1, one T pulse, c(0)=1, n(0)=1, eta=0.03"
+  },
+  "method": "C2.11-C2.14 method of steps carried to K=ceil(1/d) steps (the project's two-step quadratures are restricted to d>=1/2 and cannot be called here); fold as the root of max_A[F(A,H)-A]=0; t_ad,f by Gauss-Legendre in v with H = H_f - v^2",
+  "result": {
+    "A_f": 0.5647472640328673,
+    "H_f": 157.41933016681764,
+    "t_ad_f": 65.84387955279966
+  },
+  "numerical_error": {
+    "A_f": 1.4019587712965631e-08,
+    "H_f": 1.7502131299806933e-07,
+    "t_ad_f": 1.0069044265037519e-08
+  },
+  "residual_max_g": 2.708944180085382e-14,
+  "settings": {
+    "cheb_nodes": 44,
+    "gauss_nodes": 384,
+    "t_ad_quad_nodes": 64
+  },
+  "ladder": [
+    {
+      "H_f": 157.41933228019275,
+      "A_f": 0.5647473178191001,
+      "residual_max_g": 2.5202062658991053e-14,
+      "t_ad_f": 65.84387959763232,
+      "settings": {
+        "cheb_nodes": 24,
+        "gauss_nodes": 128,
+        "t_ad_quad_nodes": 32
+      }
+    },
+    {
+      "H_f": 157.41933034183896,
+      "A_f": 0.5647472780524551,
+      "residual_max_g": 2.6423307986078726e-14,
+      "t_ad_f": 65.84387954273062,
+      "settings": {
+        "cheb_nodes": 32,
+        "gauss_nodes": 256,
+        "t_ad_quad_nodes": 48
+      }
+    },
+    {
+      "H_f": 157.41933016681764,
+      "A_f": 0.5647472640328673,
+      "residual_max_g": 2.708944180085382e-14,
+      "t_ad_f": 65.84387955279966,
+      "settings": {
+        "cheb_nodes": 44,
+        "gauss_nodes": 384,
+        "t_ad_quad_nodes": 64
+      }
+    }
+  ],
+  "manuscript": {
+    "A_f": 0.5603318,
+    "H_f": 158.354403,
+    "t_ad_f": 66.30915
+  },
+  "deviation_from_manuscript": {
+    "A_f": 0.0044154640328673,
+    "H_f": -0.9350728331823461,
+    "t_ad_f": -0.4652704472003393
+  }
+}

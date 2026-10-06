@@ -1,0 +1,55 @@
+{
+  "hypothesis": "counter offset by one: dose = alpha r^N with N ~ Poisson(H), i.e. mixture_weights(offset=0)",
+  "convention_used_in_first_run": "n = U + Poisson(H), U ~ Bernoulli(f); at f = 1 this is n = 1 + Poisson(H), so the dose is alpha r^(1+N) -- the manuscript convention of Sec. V.C / C.7.1 / C.7.2",
+  "result": {
+    "A_f": 0.5647119817031676,
+    "H_f": 158.40653457882948,
+    "t_ad_f": 66.24697824965322
+  },
+  "numerical_error": {
+    "A_f": 8.162690634527792e-08,
+    "H_f": 1.937495170523107e-06,
+    "t_ad_f": 5.4191218623600435e-08
+  },
+  "manuscript": {
+    "A_f": 0.5603318,
+    "H_f": 158.354403,
+    "t_ad_f": 66.30915
+  },
+  "deviation_from_manuscript": {
+    "A_f": 0.004380181703167563,
+    "H_f": 0.05213157882948849,
+    "t_ad_f": -0.0621717503467778
+  },
+  "reproduces_manuscript_to_printed_digits": {
+    "A_f": false,
+    "H_f": false,
+    "t_ad_f": false
+  },
+  "ladder": [
+    {
+      "H_f": 158.40653651632465,
+      "A_f": 0.564712063330074,
+      "residual_max_g": -2.6867397195928788e-14,
+      "t_ad_f": 66.24697830384444,
+      "settings": {
+        "cheb_nodes": 24,
+        "gauss_nodes": 128,
+        "t_ad_quad_nodes": 32,
+        "counter_offset": 0
+      }
+    },
+    {
+      "H_f": 158.40653457882948,
+      "A_f": 0.5647119817031676,
+      "residual_max_g": -2.708944180085382e-14,
+      "t_ad_f": 66.24697824965322,
+      "settings": {
+        "cheb_nodes": 32,
+        "gauss_nodes": 256,
+        "t_ad_quad_nodes": 48,
+        "counter_offset": 0
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 quantity,value,numerical_error,source
-lambda_c,1.957615,,design A4 registered 1.958 (kinetic 1.957615)
+lambda_c,1.9576151889712174,,"computed 1/(M*ell), ell=ln(5/3): stage2/outputs_v1/stage2_results.json lambda_c_computed (supersedes transcribed 1.957615; design A4 registered 1.958)"
 lambda_fold,1.4825083314571268,1.0221601343118891e-11,"stage2b/fold_exact.py EXACT C2.11-C2.14 quadrature (supersedes the measure-solver value, BUGLOG S2B-4)"
 nu_f,0.5567914223197831,1.684936967727424e-09,stage2b/fold_exact.py
 A_fold,0.3755738908883731,1.1391342313871178e-09,stage2b/fold_exact.py

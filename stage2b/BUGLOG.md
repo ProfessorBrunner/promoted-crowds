@@ -162,3 +162,64 @@ done at matched adjusted h (c_min = 1e-2 against 1e-4 gives J and 2J exactly).
   part (c) after parts (a) and (b) had printed. The script was made restartable with
   per-part saving and re-run end to end; all reported numbers come from the complete
   re-run.
+
+---
+
+## S2B-CS1 — [B] off-by-one in the method-of-steps recursion below d = 1/2
+
+**Where** `stage2b/dose_mixture_fold.py::P_stat`, the `k >= 2` branch.
+
+**What** For `u` in step k's interval `[kd, (k+1)d]`, the retarded argument
+`v = u - d` lies in step **k-1**'s interval `[(k-1)d, kd]`. The code normalised
+`v` against `(k-2)d` and interpolated `A_nodes[k-2]`, evaluating the previous
+step's solution on the wrong interval.
+
+**Why it survived validation** The branch is reachable only when
+`K = ceil(1/d) >= 3`, i.e. `d < 1/2`. Every check run against it lay at
+`d >= 1/2`, where `k` never exceeds 1: the `d >= 1` closed form `1 - c_b^a`,
+`fold_exact.py::P_nu_exact` at `d = 0.5`, and
+`stage2/crowd1/predictions_s2.py::P_nu`, which asserts `d >= 0.5`. The
+continuity checks across `d = 1/2` and `d = 1/3` also passed, because just below
+`d = 1/2` the third step has width `1 - 2d -> 0` and carries negligible mass;
+the error grows smoothly as d falls.
+
+**Detection** Two independent references at `c_b = 0.5`, agreeing with each other
+and not with the quadrature: the manuscript D.3 measure solver
+(`kinetic.solve`, `r = 1`, `f = 0`, `nu` prescribed) on an h ladder with
+`c_min = 1e-5`, and a direct single-agent event-driven Monte Carlo of 10^6
+agents. The discrepancy grew from `1.0e-5` at `d = 0.45` to `0.12` at
+`d = 0.25`, while the solver's own refinement error stayed at `5.1e-4`.
+
+**Fix** Index `k-1`, normalising against `(k-1)d`.
+
+**Effect on results** After the fix the quadrature agrees with the solver's
+Richardson limit to `<= 2.2e-6` over `d` in {0.25, 0.30, 0.35, 0.40, 0.45, 0.50,
+0.60} x `nu` in {1.70, 1.90, 2.10, 2.30, 2.45}, inside the solver's own
+refinement error, and all three Monte Carlo 95% intervals contain it; the
+`d >= 1/2` values are bit-unchanged. The P6 case-A dose-mixture fold moves from
+
+    A_f 0.5647472640328673   H_f 157.41933016681764   t_ad,f 65.84387955279966
+to
+    A_f 0.5603318621202521   H_f 158.35440293993315   t_ad,f 66.30914996690508
+
+which reproduces Appendix E C7(c)'s `A_f = 0.5603318`, `H_f = 158.354403`,
+`t_ad,f = 66.30915` to `6.2e-8`. **The reported disagreement between CS and the
+manuscript on the dose-mixture fold is withdrawn: it was this bug.** The
+counter-offset hypothesis was also run on the buggy quadrature; re-run clean it
+still does not reproduce the manuscript (offset 0 gives `A_f 0.5602859709`,
+`H_f 159.3455527`, `t_ad,f 66.7141526`), so that conclusion stands but its stated
+magnitudes are superseded.
+
+**Superseded files, all retained**
+`outputs/raw/dose_mixture_fold_caseA.json`,
+`outputs/raw/dose_mixture_fold_caseA_offset0.json`,
+`outputs/raw/caseA_fold_variants.json`, and
+`outputs/raw/caseA_tdagger_at_cs_fold.json`, which measured the kinetic and
+agent crossing times at the wrong level `A = 0.5647472640328673`. Corrections:
+`outputs/raw/caseA_fold_v2.json`, `outputs/raw/caseA_fold_measure_solver.json`,
+and `outputs/raw/pnu_independent_check.json` (post-fix; the pre-fix record is
+kept as `outputs/raw/pnu_independent_check_prefix_S2B-CS1.json`).
+
+**Not affected** No figure, no manuscript value, no Stage 1 or Stage 2 verdict.
+`figures/data/F3_marks.json` was left on the manuscript value throughout, which
+the correction now confirms as right.

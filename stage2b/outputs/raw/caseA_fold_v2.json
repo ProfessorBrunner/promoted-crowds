@@ -1,0 +1,236 @@
+{
+  "buglog": "S2B-CS1",
+  "manuscript": {
+    "A_f": 0.5603318,
+    "H_f": 158.354403,
+    "t_ad_f": 66.30915
+  },
+  "variants": [
+    {
+      "construction": "mixture_n1",
+      "result": {
+        "A_f": 0.5603318621202521,
+        "H_f": 158.35440293993315,
+        "t_ad_f": 66.30914996690508
+      },
+      "numerical_error": {
+        "A_f": 4.523310392912094e-09,
+        "H_f": 1.2557003969959624e-07,
+        "t_ad_f": 7.15033365850104e-09
+      },
+      "deviation_from_manuscript": {
+        "A_f": 6.212025205343252e-08,
+        "H_f": -6.006683861414785e-08,
+        "t_ad_f": -3.3094920581788756e-08
+      },
+      "reproduces_manuscript_to_printed_digits": {
+        "A_f": false,
+        "H_f": true,
+        "t_ad_f": true
+      },
+      "ladder": [
+        {
+          "A_f": 0.56033192113081,
+          "H_f": 158.3544050594514,
+          "t_ad_f": 66.30915000526252,
+          "settings": {
+            "cheb_nodes": 24,
+            "gauss_nodes": 128,
+            "t_ad_quad_nodes": 32,
+            "counter_offset": 1
+          }
+        },
+        {
+          "A_f": 0.5603318575969417,
+          "H_f": 158.3544030655032,
+          "t_ad_f": 66.30914995975475,
+          "settings": {
+            "cheb_nodes": 32,
+            "gauss_nodes": 256,
+            "t_ad_quad_nodes": 48,
+            "counter_offset": 1
+          }
+        },
+        {
+          "A_f": 0.5603318621202521,
+          "H_f": 158.35440293993315,
+          "t_ad_f": 66.30914996690508,
+          "settings": {
+            "cheb_nodes": 40,
+            "gauss_nodes": 320,
+            "t_ad_quad_nodes": 56,
+            "counter_offset": 1
+          }
+        }
+      ]
+    },
+    {
+      "construction": "mixture_n0",
+      "result": {
+        "A_f": 0.5602859708860506,
+        "H_f": 159.34555272314492,
+        "t_ad_f": 66.714152642441
+      },
+      "numerical_error": {
+        "A_f": 1.3012727118066891e-08,
+        "H_f": 1.2550302130875934e-07,
+        "t_ad_f": 7.211397701212263e-09
+      },
+      "deviation_from_manuscript": {
+        "A_f": -4.582911394945821e-05,
+        "H_f": 0.9911497231449289,
+        "t_ad_f": 0.4050026424409907
+      },
+      "reproduces_manuscript_to_printed_digits": {
+        "A_f": false,
+        "H_f": false,
+        "t_ad_f": false
+      },
+      "ladder": [
+        {
+          "A_f": 0.5602860297326308,
+          "H_f": 159.34555484163744,
+          "t_ad_f": 66.71415267985745,
+          "settings": {
+            "cheb_nodes": 24,
+            "gauss_nodes": 128,
+            "t_ad_quad_nodes": 32,
+            "counter_offset": 0
+          }
+        },
+        {
+          "A_f": 0.5602859838987777,
+          "H_f": 159.34555284864794,
+          "t_ad_f": 66.7141526352296,
+          "settings": {
+            "cheb_nodes": 32,
+            "gauss_nodes": 256,
+            "t_ad_quad_nodes": 48,
+            "counter_offset": 0
+          }
+        },
+        {
+          "A_f": 0.5602859708860506,
+          "H_f": 159.34555272314492,
+          "t_ad_f": 66.714152642441,
+          "settings": {
+            "cheb_nodes": 40,
+            "gauss_nodes": 320,
+            "t_ad_quad_nodes": 56,
+            "counter_offset": 0
+          }
+        }
+      ]
+    },
+    {
+      "construction": "single_mean_n",
+      "result": {
+        "A_f": 0.5675355754412551,
+        "H_f": 159.7791675173279,
+        "t_ad_f": 66.80997563980614
+      },
+      "numerical_error": {
+        "A_f": 1.2274236738107902e-08,
+        "H_f": 1.3752543281952967e-07,
+        "t_ad_f": 2.5608756004658062e-08
+      },
+      "deviation_from_manuscript": {
+        "A_f": 0.007203775441255056,
+        "H_f": 1.424764517327901,
+        "t_ad_f": 0.5008256398061377
+      },
+      "reproduces_manuscript_to_printed_digits": {
+        "A_f": false,
+        "H_f": false,
+        "t_ad_f": false
+      },
+      "ladder": [
+        {
+          "A_f": 0.5675356351671624,
+          "H_f": 159.7791698201592,
+          "t_ad_f": 66.80997778423433,
+          "settings": {
+            "M": 24,
+            "N": 128,
+            "nq": 32
+          }
+        },
+        {
+          "A_f": 0.5675355877154918,
+          "H_f": 159.77916765485332,
+          "t_ad_f": 66.8099756654149,
+          "settings": {
+            "M": 32,
+            "N": 256,
+            "nq": 48
+          }
+        },
+        {
+          "A_f": 0.5675355754412551,
+          "H_f": 159.7791675173279,
+          "t_ad_f": 66.80997563980614,
+          "settings": {
+            "M": 40,
+            "N": 320,
+            "nq": 56
+          }
+        }
+      ]
+    },
+    {
+      "construction": "mean_dose",
+      "result": {
+        "A_f": 0.567535583862502,
+        "H_f": 160.5834295942014,
+        "t_ad_f": 67.14626935443019
+      },
+      "numerical_error": {
+        "A_f": 4.568250999703594e-09,
+        "H_f": 1.382176719744166e-07,
+        "t_ad_f": 2.5737648456924944e-08
+      },
+      "deviation_from_manuscript": {
+        "A_f": 0.007203783862501978,
+        "H_f": 2.2290265942014003,
+        "t_ad_f": 0.837119354430186
+      },
+      "reproduces_manuscript_to_printed_digits": {
+        "A_f": false,
+        "H_f": false,
+        "t_ad_f": false
+      },
+      "ladder": [
+        {
+          "A_f": 0.5675356351579292,
+          "H_f": 160.58343190862414,
+          "t_ad_f": 67.1462715096525,
+          "settings": {
+            "M": 24,
+            "N": 128,
+            "nq": 32
+          }
+        },
+        {
+          "A_f": 0.567535579294251,
+          "H_f": 160.58342973241906,
+          "t_ad_f": 67.14626938016784,
+          "settings": {
+            "M": 32,
+            "N": 256,
+            "nq": 48
+          }
+        },
+        {
+          "A_f": 0.567535583862502,
+          "H_f": 160.5834295942014,
+          "t_ad_f": 67.14626935443019,
+          "settings": {
+            "M": 40,
+            "N": 320,
+            "nq": 56
+          }
+        }
+      ]
+    }
+  ]
+}
